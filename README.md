@@ -92,7 +92,7 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-08-05 · 등록된 문제 0개
+> 마지막 갱신: 2026-08-05 · 등록된 문제 5개
 
 ### 🏆 제출 순위
 
@@ -100,6 +100,17 @@ _아직 제출된 풀이가 없습니다._
 
 ### 📚 주차별 문제
 
-_아직 등록된 문제가 없습니다._
+<details open>
+<summary><b>week-01</b> (5문제)</summary>
+
+| 문제 | 이슈 | 제출 | 제출자 |
+| --- | --- | --- | --- |
+| [프로그래머스 42627 · 디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627) | [#4](https://github.com/ssafy-class-16-room-09/Algorithm-01-03-v2/issues/4) | 0 | - |
+| [프로그래머스 42892 · 길 찾기 게임](https://school.programmers.co.kr/learn/courses/30/lessons/42892) | [#3](https://github.com/ssafy-class-16-room-09/Algorithm-01-03-v2/issues/3) | 0 | - |
+| [프로그래머스 43162 · 네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) | [#5](https://github.com/ssafy-class-16-room-09/Algorithm-01-03-v2/issues/5) | 0 | - |
+| [프로그래머스 43238 · 입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238) | [#6](https://github.com/ssafy-class-16-room-09/Algorithm-01-03-v2/issues/6) | 0 | - |
+| [프로그래머스 81303 · 표 편집](https://school.programmers.co.kr/learn/courses/30/lessons/81303) | [#2](https://github.com/ssafy-class-16-room-09/Algorithm-01-03-v2/issues/2) | 0 | - |
+
+</details>
 
 <!-- algo-study:board:end -->
