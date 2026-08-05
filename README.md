@@ -92,25 +92,14 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-08-05 · 등록된 문제 3개
+> 마지막 갱신: 2026-08-05 · 등록된 문제 0개
 
 ### 🏆 제출 순위
 
-| 순위 | 스터디원 | 푼 문제 | 진행률 |
-| --- | --- | --- | --- |
-| 🥇 | [@JooeonLee](https://github.com/JooeonLee) | 2 / 3 | 67% |
+_아직 제출된 풀이가 없습니다._
 
 ### 📚 주차별 문제
 
-<details open>
-<summary><b>week-00</b> (3문제)</summary>
-
-| 문제 | 이슈 | 제출 | 제출자 |
-| --- | --- | --- | --- |
-| [프로그래머스 12912 · 두 정수 사이의 합](https://school.programmers.co.kr/learn/courses/30/lessons/12912) | [#18](https://github.com/JooeonLee/algo-work-flow-test/issues/18) | 1 | [@JooeonLee](https://github.com/JooeonLee) |
-| [프로그래머스 12925 · 문자열을 정수로 바꾸기](https://school.programmers.co.kr/learn/courses/30/lessons/12925) | [#21](https://github.com/JooeonLee/algo-work-flow-test/issues/21) | 0 | - |
-| [프로그래머스 12937 · 짝수와 홀수](https://school.programmers.co.kr/learn/courses/30/lessons/12937) | [#17](https://github.com/JooeonLee/algo-work-flow-test/issues/17) | 1 | [@JooeonLee](https://github.com/JooeonLee) |
-
-</details>
+_아직 등록된 문제가 없습니다._
 
 <!-- algo-study:board:end -->
