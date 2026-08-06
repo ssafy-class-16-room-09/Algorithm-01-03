@@ -2,6 +2,7 @@
 
 - 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/43238
 - 주차: week-01
+- 난이도: Lv.3
 - 논의 이슈: [#6](https://github.com/ssafy-class-16-room-09/Algorithm-01-03-v2/issues/6) (상위 이슈: [#1](https://github.com/ssafy-class-16-room-09/Algorithm-01-03-v2/issues/1))
 
 ## 제출 방법
@@ -19,3 +20,6 @@ mkdir -p solutions/week-01/pgs-43238/<본인-github-아이디>
 ## 제출 현황
 
 - [ ] @JooeonLee
+- [ ] @alswlfl29
+- [ ] @babirakkk
+- [ ] @Sionparadox
