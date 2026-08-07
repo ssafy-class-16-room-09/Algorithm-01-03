@@ -14,7 +14,7 @@ class Solution {
                 while (!q.isEmpty()) { // bfs
                     int curr = q.poll();
                     for (int j = 0; j < n; j++) {
-                        if (curr != j && computers[curr][j] == 1 && !visit[j]) {
+                        if (computers[curr][j] == 1 && !visit[j]) {
                             visit[j] = true;
                             q.add(j);
                         }
