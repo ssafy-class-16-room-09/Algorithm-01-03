@@ -81,23 +81,33 @@ export async function run({ github, context, core }) {
     warnings.push('제출된 `.java` 파일이 없습니다. 풀이 PR이 맞는지 확인해 주세요.');
   }
 
-  // 라벨 정리: 이 PR이 다루는 주차 / 플랫폼을 붙여 둔다.
+  // 라벨 정리: 이 PR이 다루는 주차 / 플랫폼 / 문제를 붙여 둔다.
   const labels = new Set();
+  const problemLabels = new Set();
   for (const [dirPath, meta] of problems) {
     const parsed = parseSolutionPath(`${dirPath}/${author}/Solution.java`);
     if (parsed) labels.add(parsed.weekDir);
     if (meta?.platformLabel) labels.add(meta.platformLabel);
     else if (parsed) labels.add(platformLabel(parsed.platform));
+    // Projects의 Slice by 는 필드 값만 쪼갠다. 제목 텍스트로는 안 되므로
+    // 문제별로 PR을 모아 보려면 PR 자신이 문제 라벨을 들고 있어야 한다.
+    // 경로에서 유도하니 사람이 제목을 어떻게 쓰든 어긋나지 않는다.
+    if (parsed) {
+      const problemLabel = `${parsed.platform}-${parsed.number}`;
+      labels.add(problemLabel);
+      problemLabels.add(problemLabel);
+    }
   }
   if (labels.size) {
+    const labelStyle = (name) => {
+      if (name.startsWith('week-')) return { color: '5319e7', description: '스터디 주차' };
+      if (problemLabels.has(name)) return { color: 'fbca04', description: '문제' };
+      return { color: 'c2e0c6', description: '문제 출처' };
+    };
     await ensureLabels({
       github,
       context,
-      labels: [...labels].map((name) => ({
-        name,
-        color: name.startsWith('week-') ? '5319e7' : 'c2e0c6',
-        description: name.startsWith('week-') ? '스터디 주차' : '문제 출처',
-      })),
+      labels: [...labels].map((name) => ({ name, ...labelStyle(name) })),
     });
     await github.rest.issues.addLabels({
       owner,
