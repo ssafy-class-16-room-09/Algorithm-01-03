@@ -1,0 +1,12 @@
+{
+  "issue": 28,
+  "parentIssue": 26,
+  "week": 2,
+  "platform": "pgs",
+  "platformLabel": "프로그래머스",
+  "number": "42628",
+  "title": "이중우선순위큐",
+  "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42628",
+  "difficulty": "Lv.3",
+  "deadline": null
+}
