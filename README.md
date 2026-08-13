@@ -99,7 +99,7 @@ solutions/
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
 | 🥇 | [@babirakkk](https://github.com/babirakkk) | 2 / 10 | 20% |
-| 🥈 | [@JooeonLee](https://github.com/JooeonLee) | 1 / 10 | 10% |
+| 🥈 | [@JooeonLee](https://github.com/JooeonLee) | 2 / 10 | 20% |
 
 ### 📚 주차별 문제
 
@@ -121,7 +121,7 @@ solutions/
 
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
-| [프로그래머스 42627 · 디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627) | [#4](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/4) | 0 | - |
+| [프로그래머스 42627 · 디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627) | [#4](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/4) | 1 | [@JooeonLee](https://github.com/JooeonLee) |
 | [프로그래머스 42892 · 길 찾기 게임](https://school.programmers.co.kr/learn/courses/30/lessons/42892) | [#3](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/3) | 2 | [@JooeonLee](https://github.com/JooeonLee), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 43162 · 네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) | [#5](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/5) | 1 | [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 43238 · 입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238) | [#6](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/6) | 0 | - |
