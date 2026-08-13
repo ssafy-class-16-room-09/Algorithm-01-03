@@ -98,10 +98,10 @@ solutions/
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@babirakkk](https://github.com/babirakkk) | 3 / 10 | 30% |
-| 🥈 | [@JooeonLee](https://github.com/JooeonLee) | 2 / 10 | 20% |
-| 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 1 / 10 | 10% |
-| 4 | [@Sionparadox](https://github.com/Sionparadox) | 1 / 10 | 10% |
+| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 4 / 10 | 40% |
+| 🥈 | [@babirakkk](https://github.com/babirakkk) | 3 / 10 | 30% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 2 / 10 | 20% |
+| 4 | [@alswlfl29](https://github.com/alswlfl29) | 1 / 10 | 10% |
 
 ### 📚 주차별 문제
 
@@ -123,10 +123,10 @@ solutions/
 
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
-| [프로그래머스 42627 · 디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627) | [#4](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/4) | 2 | [@JooeonLee](https://github.com/JooeonLee), [@alswlfl29](https://github.com/alswlfl29) |
+| [프로그래머스 42627 · 디스크 컨트롤러](https://school.programmers.co.kr/learn/courses/30/lessons/42627) | [#4](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/4) | 3 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29) |
 | [프로그래머스 42892 · 길 찾기 게임](https://school.programmers.co.kr/learn/courses/30/lessons/42892) | [#3](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/3) | 2 | [@JooeonLee](https://github.com/JooeonLee), [@babirakkk](https://github.com/babirakkk) |
-| [프로그래머스 43162 · 네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) | [#5](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/5) | 1 | [@babirakkk](https://github.com/babirakkk) |
-| [프로그래머스 43238 · 입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238) | [#6](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/6) | 1 | [@babirakkk](https://github.com/babirakkk) |
+| [프로그래머스 43162 · 네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) | [#5](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/5) | 2 | [@Sionparadox](https://github.com/Sionparadox), [@babirakkk](https://github.com/babirakkk) |
+| [프로그래머스 43238 · 입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238) | [#6](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/6) | 2 | [@Sionparadox](https://github.com/Sionparadox), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 81303 · 표 편집](https://school.programmers.co.kr/learn/courses/30/lessons/81303) | [#2](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/2) | 1 | [@Sionparadox](https://github.com/Sionparadox) |
 
 </details>
