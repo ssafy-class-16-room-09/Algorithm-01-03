@@ -59,8 +59,7 @@ class Solution {
     // 아니면 큐에서 꺼낸 숫자의 나온 횟수 감소
     private void count(int num) {
         int cnt = hashMap.get(num);
-        if(cnt == 0) hashMap.remove(num);
-        else hashMap.put(num, cnt-1);
+        if(cnt <= 0) hashMap.remove(num);
     }
 }
 
@@ -81,5 +80,5 @@ class Solution {
 
 
 ["I 100", "D 1", "I 101"]
-SET -> 101
+정답 -> 101
 */
