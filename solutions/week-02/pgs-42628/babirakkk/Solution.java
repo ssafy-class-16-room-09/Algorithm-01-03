@@ -22,9 +22,9 @@ class Solution {
             if (type.equals("I")) {
                 insert(n);
             } else if (type.equals("D")) {
-                if (n == -1) { // remove minimum
+                if (n == -1) { // remove min
                     deleteMin();
-                } else { // remove maximum
+                } else { // remove max
                     deleteMax();
                 }
             }
@@ -33,13 +33,13 @@ class Solution {
         int[] answer = new int[2];
         Num max = deleteMax();
         Num min = deleteMin();
-        if (max == null) {
-            answer[0] = 0;
+        if (max == null) { // 남아있는 원소가 없으면 
+            answer[0] = 0; // [0, 0]
             answer[1] = 0;
         } else {
             answer[0] = max.value;
-            if (min == null) {
-                answer[1] = answer[0];
+            if (min == null) { // 최댓값을 꺼낸 후 최솟값이 없으면
+                answer[1] = answer[0]; // 원소가 1개만 남아있던 상태 -> 최댓값 == 최솟값
             } else {
                 answer[1] = min.value;
             }
