@@ -1,0 +1,26 @@
+!SESSION 2026-08-15 16:52:58.864 -----------------------------------------------
+eclipse.buildId=4.39.0.20260305-0817
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/yubin/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/yubin/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-08-15 16:52:59.537
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-08-15 16:53:50.561
+!MESSAGE Logback config file: /Users/yubin/Desktop/Study/algorithm-study/Algorithm-01-03/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+!SESSION 2026-08-15 16:54:53.406 -----------------------------------------------
+eclipse.buildId=4.39.0.20260305-0817
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/yubin/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/yubin/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-08-15 16:54:54.066
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-08-15 16:55:03.274
+!MESSAGE Logback config file: /Users/yubin/Desktop/Study/algorithm-study/Algorithm-01-03/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
