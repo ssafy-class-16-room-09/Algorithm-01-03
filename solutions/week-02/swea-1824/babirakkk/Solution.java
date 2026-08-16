@@ -7,7 +7,7 @@ class Solution {
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static char[][] cmdMap;
 	static boolean[][][][] visited; // [r][c][dir][mem]
-	static final char OUT_OF_BOUND = ' ';
+	static final char PADDING = ' ';
 	static final int UP = 0;
 	static final int DOWN = 1;
 	static final int LEFT = 2;
@@ -122,7 +122,7 @@ class Solution {
 	private static int[] move(int currX, int currY, int dir, int mem) {
 		currX += dx[dir];
 		currY += dy[dir];
-		if (cmdMap[currX][currY] == OUT_OF_BOUND) {
+		if (cmdMap[currX][currY] == PADDING) {
 			switch (dir) {
 			case UP:
 				currX += r;
@@ -148,20 +148,20 @@ class Solution {
 
 	/**
 	 * 명령어 데이터를 읽어 2차원 배열에 채움
-	 * 상하좌우 테두리를 OUT_OF_BOUND 문자로 채워 격자 경계 구분
+	 * 상하좌우 테두리를 PADDING 문자로 채워 격자 경계 구분
 	 * 
 	 * @throws IOException 입력 스트림 읽기 실패 시 발생
 	 */
 	private static void fillMap()  throws IOException {
-		Arrays.fill(cmdMap[0], OUT_OF_BOUND);
+		Arrays.fill(cmdMap[0], PADDING);
 		for (int i = 1; i < r + 1; i++) {
-			cmdMap[i][0] = OUT_OF_BOUND;
+			cmdMap[i][0] = PADDING;
 			String cmd = br.readLine();
 			for (int j = 1; j < c + 1; j++) {
 				cmdMap[i][j] = cmd.charAt(j - 1);
 			}
-			cmdMap[i][c + 1] = OUT_OF_BOUND;
+			cmdMap[i][c + 1] = PADDING;
 		}
-		Arrays.fill(cmdMap[r + 1], OUT_OF_BOUND);
+		Arrays.fill(cmdMap[r + 1], PADDING);
 	}
 }
