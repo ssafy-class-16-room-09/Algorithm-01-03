@@ -92,20 +92,33 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-08-13 · 등록된 문제 10개
+> 마지막 갱신: 2026-08-19 · 등록된 문제 15개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@alswlfl29](https://github.com/alswlfl29) | 5 / 10 | 50% |
-| 🥈 | [@babirakkk](https://github.com/babirakkk) | 5 / 10 | 50% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 5 / 10 | 50% |
-| 4 | [@Sionparadox](https://github.com/Sionparadox) | 5 / 10 | 50% |
+| 🥇 | [@alswlfl29](https://github.com/alswlfl29) | 5 / 15 | 33% |
+| 🥈 | [@babirakkk](https://github.com/babirakkk) | 5 / 15 | 33% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 5 / 15 | 33% |
+| 4 | [@Sionparadox](https://github.com/Sionparadox) | 5 / 15 | 33% |
 
 ### 📚 주차별 문제
 
 <details open>
+<summary><b>week-03</b> (5문제)</summary>
+
+| 문제 | 이슈 | 제출 | 제출자 |
+| --- | --- | --- | --- |
+| [프로그래머스 12902 · 3 x n 타일링](https://school.programmers.co.kr/learn/courses/30/lessons/12902) | [#71](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/71) | 0 | - |
+| [프로그래머스 468379 · 선인장 숨기기](https://school.programmers.co.kr/learn/courses/30/lessons/468379) | [#70](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/70) | 0 | - |
+| [프로그래머스 67259 · 경주로 건설](https://school.programmers.co.kr/learn/courses/30/lessons/67259) | [#69](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/69) | 0 | - |
+| [SWEA 3752 · 가능한 시험 점수](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&problemLevel=4&contestProbId=AWHPkqBqAEsDFAUn) | [#72](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/72) | 0 | - |
+| [SWEA 4408 · 자기방으로 돌아가기](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&problemLevel=4&contestProbId=AWNcJ2sapZMDFAV8) | [#73](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/73) | 0 | - |
+
+</details>
+
+<details>
 <summary><b>week-02</b> (5문제)</summary>
 
 | 문제 | 이슈 | 제출 | 제출자 |
