@@ -1,4 +1,3 @@
-package week-02.
 import java.util.*;
 
 class Solution
