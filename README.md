@@ -92,13 +92,13 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-08-19 · 등록된 문제 15개
+> 마지막 갱신: 2026-08-20 · 등록된 문제 15개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@alswlfl29](https://github.com/alswlfl29) | 5 / 15 | 33% |
+| 🥇 | [@alswlfl29](https://github.com/alswlfl29) | 6 / 15 | 40% |
 | 🥈 | [@babirakkk](https://github.com/babirakkk) | 5 / 15 | 33% |
 | 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 5 / 15 | 33% |
 | 4 | [@Sionparadox](https://github.com/Sionparadox) | 5 / 15 | 33% |
@@ -124,7 +124,7 @@ solutions/
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
 | [프로그래머스 42628 · 이중우선순위큐](https://school.programmers.co.kr/learn/courses/30/lessons/42628) | [#28](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/28) | 0 | - |
-| [프로그래머스 42884 · 단속카메라](https://school.programmers.co.kr/learn/courses/30/lessons/42884) | [#27](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/27) | 0 | - |
+| [프로그래머스 42884 · 단속카메라](https://school.programmers.co.kr/learn/courses/30/lessons/42884) | [#27](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/27) | 1 | [@alswlfl29](https://github.com/alswlfl29) |
 | [프로그래머스 43105 · 정수 삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105) | [#29](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/29) | 0 | - |
 | [SWEA 1824 · 혁진이의 프로그램 검증](https://swexpertacademy.com/main/solvingProblem/solvingProblem.do) | [#31](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/31) | 0 | - |
 | [SWEA 2477 · 차량 정비소](https://swexpertacademy.com/main/solvingProblem/solvingProblem.do) | [#30](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/30) | 0 | - |
