@@ -100,8 +100,8 @@ solutions/
 | --- | --- | --- | --- |
 | 🥇 | [@alswlfl29](https://github.com/alswlfl29) | 10 / 15 | 67% |
 | 🥈 | [@babirakkk](https://github.com/babirakkk) | 10 / 15 | 67% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 5 / 15 | 33% |
-| 4 | [@Sionparadox](https://github.com/Sionparadox) | 5 / 15 | 33% |
+| 🥉 | [@Sionparadox](https://github.com/Sionparadox) | 6 / 15 | 40% |
+| 4 | [@JooeonLee](https://github.com/JooeonLee) | 5 / 15 | 33% |
 
 ### 📚 주차별 문제
 
@@ -126,7 +126,7 @@ solutions/
 | [프로그래머스 42628 · 이중우선순위큐](https://school.programmers.co.kr/learn/courses/30/lessons/42628) | [#28](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/28) | 2 | [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 42884 · 단속카메라](https://school.programmers.co.kr/learn/courses/30/lessons/42884) | [#27](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/27) | 2 | [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 43105 · 정수 삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105) | [#29](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/29) | 2 | [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
-| [SWEA 1824 · 혁진이의 프로그램 검증](https://swexpertacademy.com/main/solvingProblem/solvingProblem.do) | [#31](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/31) | 2 | [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
+| [SWEA 1824 · 혁진이의 프로그램 검증](https://swexpertacademy.com/main/solvingProblem/solvingProblem.do) | [#31](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/31) | 3 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [SWEA 2477 · 차량 정비소](https://swexpertacademy.com/main/solvingProblem/solvingProblem.do) | [#30](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/30) | 2 | [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 
 </details>
