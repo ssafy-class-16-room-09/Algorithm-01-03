@@ -7,11 +7,10 @@ class Solution {
         dp[0] = 1;
         dp[2] = 3; // n=2
         
+        long prefixSum = dp[0]; // 이전 값들의 누적 합
         for(int i=4; i<=n; i+=2) {
-            dp[i] = dp[i-2]%MOD*3%MOD;
-            for(int j=i-4; j>=0; j-=2) {
-                dp[i] = dp[i]%MOD + dp[j]%MOD*2%MOD;
-            }
+            dp[i] = (dp[i-2]%MOD*3+ prefixSum*2%MOD)%MOD;
+            prefixSum = (prefixSum+dp[i-2])%MOD;
         }
 
         return (int) dp[n]%MOD;
