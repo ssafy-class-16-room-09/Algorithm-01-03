@@ -92,7 +92,7 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-08-27 · 등록된 문제 20개
+> 마지막 갱신: 2026-08-28 · 등록된 문제 20개
 
 ### 🏆 제출 순위
 
@@ -100,8 +100,8 @@ solutions/
 | --- | --- | --- | --- |
 | 🥇 | [@babirakkk](https://github.com/babirakkk) | 15 / 20 | 75% |
 | 🥈 | [@alswlfl29](https://github.com/alswlfl29) | 14 / 20 | 70% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 10 / 20 | 50% |
-| 4 | [@Sionparadox](https://github.com/Sionparadox) | 10 / 20 | 50% |
+| 🥉 | [@Sionparadox](https://github.com/Sionparadox) | 11 / 20 | 55% |
+| 4 | [@JooeonLee](https://github.com/JooeonLee) | 10 / 20 | 50% |
 
 ### 📚 주차별 문제
 
@@ -124,7 +124,7 @@ solutions/
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
 | [프로그래머스 12902 · 3 x n 타일링](https://school.programmers.co.kr/learn/courses/30/lessons/12902) | [#71](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/71) | 2 | [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
-| [프로그래머스 468379 · 선인장 숨기기](https://school.programmers.co.kr/learn/courses/30/lessons/468379) | [#70](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/70) | 1 | [@babirakkk](https://github.com/babirakkk) |
+| [프로그래머스 468379 · 선인장 숨기기](https://school.programmers.co.kr/learn/courses/30/lessons/468379) | [#70](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/70) | 2 | [@Sionparadox](https://github.com/Sionparadox), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 67259 · 경주로 건설](https://school.programmers.co.kr/learn/courses/30/lessons/67259) | [#69](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/69) | 2 | [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [SWEA 3752 · 가능한 시험 점수](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&problemLevel=4&contestProbId=AWHPkqBqAEsDFAUn) | [#72](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/72) | 2 | [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [SWEA 4408 · 자기방으로 돌아가기](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&problemLevel=4&contestProbId=AWNcJ2sapZMDFAV8) | [#73](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/73) | 2 | [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
