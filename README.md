@@ -101,7 +101,7 @@ solutions/
 | 🥇 | [@babirakkk](https://github.com/babirakkk) | 15 / 20 | 75% |
 | 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 15 / 20 | 75% |
 | 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 14 / 20 | 70% |
-| 4 | [@JooeonLee](https://github.com/JooeonLee) | 14 / 20 | 70% |
+| 4 | [@JooeonLee](https://github.com/JooeonLee) | 13 / 20 | 65% |
 
 ### 📚 주차별 문제
 
@@ -127,7 +127,7 @@ solutions/
 | [프로그래머스 468379 · 선인장 숨기기](https://school.programmers.co.kr/learn/courses/30/lessons/468379) | [#70](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/70) | 2 | [@Sionparadox](https://github.com/Sionparadox), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 67259 · 경주로 건설](https://school.programmers.co.kr/learn/courses/30/lessons/67259) | [#69](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/69) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [SWEA 3752 · 가능한 시험 점수](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&problemLevel=4&contestProbId=AWHPkqBqAEsDFAUn) | [#72](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/72) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
-| [SWEA 4408 · 자기방으로 돌아가기](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&problemLevel=4&contestProbId=AWNcJ2sapZMDFAV8) | [#73](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/73) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
+| [SWEA 4408 · 자기방으로 돌아가기](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&problemLevel=4&contestProbId=AWNcJ2sapZMDFAV8) | [#73](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/73) | 3 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 
 </details>
 
