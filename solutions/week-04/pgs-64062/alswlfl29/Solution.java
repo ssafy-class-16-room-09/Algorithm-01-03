@@ -1,5 +1,5 @@
 class Solution {
-    int[] tree; // 세그먼트 트리(최소값)
+    int[] tree; // 세그먼트 트리(최대값)
     int[] stones; // 징검다리 배열
     
     public int solution(int[] stones, int k) {
