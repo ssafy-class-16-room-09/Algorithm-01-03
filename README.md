@@ -98,8 +98,8 @@ solutions/
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@alswlfl29](https://github.com/alswlfl29) | 19 / 25 | 76% |
-| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 19 / 25 | 76% |
+| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 20 / 25 | 80% |
+| 🥈 | [@alswlfl29](https://github.com/alswlfl29) | 19 / 25 | 76% |
 | 🥉 | [@babirakkk](https://github.com/babirakkk) | 16 / 25 | 64% |
 | 4 | [@JooeonLee](https://github.com/JooeonLee) | 13 / 25 | 52% |
 
@@ -124,7 +124,7 @@ solutions/
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
 | [프로그래머스 17685 · [3차] 자동완성](https://school.programmers.co.kr/learn/courses/30/lessons/17685) | [#96](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/96) | 2 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29) |
-| [프로그래머스 42579 · 베스트앨범](https://school.programmers.co.kr/learn/courses/30/lessons/42579) | [#98](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/98) | 1 | [@alswlfl29](https://github.com/alswlfl29) |
+| [프로그래머스 42579 · 베스트앨범](https://school.programmers.co.kr/learn/courses/30/lessons/42579) | [#98](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/98) | 2 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29) |
 | [프로그래머스 64062 · 징검다리 건너기](https://school.programmers.co.kr/learn/courses/30/lessons/64062) | [#97](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/97) | 3 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [SWEA 1249 · 보급로](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV15QRX6APsCFAYD) | [#94](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/94) | 2 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29) |
 | [SWEA 3289 · 서로소 집합](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWBJKA6qr2oDFAWr) | [#95](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/95) | 2 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29) |
