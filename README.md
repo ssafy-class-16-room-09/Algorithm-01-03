@@ -92,7 +92,7 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-09-02 · 등록된 문제 25개
+> 마지막 갱신: 2026-09-03 · 등록된 문제 25개
 
 ### 🏆 제출 순위
 
@@ -101,7 +101,7 @@ solutions/
 | 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 20 / 25 | 80% |
 | 🥈 | [@alswlfl29](https://github.com/alswlfl29) | 19 / 25 | 76% |
 | 🥉 | [@babirakkk](https://github.com/babirakkk) | 19 / 25 | 76% |
-| 4 | [@JooeonLee](https://github.com/JooeonLee) | 13 / 25 | 52% |
+| 4 | [@JooeonLee](https://github.com/JooeonLee) | 14 / 25 | 56% |
 
 ### 📚 주차별 문제
 
@@ -127,7 +127,7 @@ solutions/
 | [프로그래머스 42579 · 베스트앨범](https://school.programmers.co.kr/learn/courses/30/lessons/42579) | [#98](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/98) | 2 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29) |
 | [프로그래머스 64062 · 징검다리 건너기](https://school.programmers.co.kr/learn/courses/30/lessons/64062) | [#97](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/97) | 3 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [SWEA 1249 · 보급로](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV15QRX6APsCFAYD) | [#94](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/94) | 3 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
-| [SWEA 3289 · 서로소 집합](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWBJKA6qr2oDFAWr) | [#95](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/95) | 3 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
+| [SWEA 3289 · 서로소 집합](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWBJKA6qr2oDFAWr) | [#95](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/95) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 
 </details>
 
