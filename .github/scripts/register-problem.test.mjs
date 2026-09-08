@@ -157,13 +157,46 @@ test('이미 등록된 프로그래머스 문제를 제목 없이 재등록하�
   assert.equal(meta.title, '짝수와 홀수');
 });
 
+test('코드트리 링크는 슬러그를 자동 추출해 ct- 폴더를 만든다 (제목은 직접 입력)', async () => {
+  const { data: parent } = await github.rest.issues.create({ title: '[문제] week-05' });
+  const b = body(
+    5,
+    'https://www.codetree.ai/training-field/frequent-problems/problems/codetree-omakase | 코드트리 오마카세 | | Gold |',
+  );
+  let fetchCalled = false;
+  const fetchImpl = async () => {
+    fetchCalled = true;
+    return { ok: true, text: async () => '' };
+  };
+  const core = makeCore();
+  await registerRun({ github, context: issueContext(OWNER, REPO, parent.number, b), core, fetchImpl });
+
+  assert.equal(core._outputs.__failed, undefined);
+  assert.equal(fetchCalled, false, '코드트리는 제목 자동 추출을 시도하지 않는다');
+  const meta = readMeta('solutions/week-05/ct-codetree-omakase');
+  assert.equal(meta.platform, 'ct');
+  assert.equal(meta.platformLabel, '코드트리');
+  assert.equal(meta.number, 'codetree-omakase');
+  assert.equal(meta.title, '코드트리 오마카세');
+  assert.equal(meta.difficulty, 'Gold');
+});
+
+test('코드트리 링크에 제목이 없으면 직접 입력하라는 에러로 떨어진다', async () => {
+  const { data: parent } = await github.rest.issues.create({ title: '[문제]' });
+  const b = body(5, 'https://www.codetree.ai/frequent-problems/artistry/description');
+  const core = makeCore();
+  await registerRun({ github, context: issueContext(OWNER, REPO, parent.number, b), core });
+  assert.ok(core._outputs.__failed);
+  assert.match(core._outputs.__failed, /제목을 입력해 주세요/);
+});
+
 test('지원하지 않는 플랫폼 링크는 등록이 실패한다', async () => {
   const { data: parent } = await github.rest.issues.create({ title: '[문제]' });
   const bad = body(1, 'https://leetcode.com/problems/two-sum | 지원안함 | 1 | | ');
   const core = makeCore();
   await registerRun({ github, context: issueContext(OWNER, REPO, parent.number, bad), core });
   assert.ok(core._outputs.__failed);
-  assert.match(core._outputs.__failed, /SWEA 또는 프로그래머스/);
+  assert.match(core._outputs.__failed, /SWEA · 프로그래머스 · 코드트리/);
 });
 
 test('SWEA 링크인데 번호를 안 적으면 실패한다', async () => {

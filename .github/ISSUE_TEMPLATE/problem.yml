@@ -26,14 +26,15 @@ body:
         프로그래머스는 링크만 한 줄씩 적어도 됩니다 (제목·번호를 자동으로 채웁니다).
         그 외에는 한 줄에 문제 하나씩, `|`(파이프)로 구분해서 입력하세요.
         형식: `링크 | 제목(선택) | 번호(선택) | 난이도(선택) | 마감일(선택)`
-        - 링크: SWEA(swexpertacademy.com) 또는 프로그래머스(programmers.co.kr) 링크만 지원합니다.
-        - 제목: 프로그래머스는 비워 두면 문제 페이지에서 자동으로 가져옵니다. SWEA는 직접 입력해야 합니다.
-        - 번호: SWEA는 링크에 번호가 없어 직접 입력해야 합니다. 프로그래머스는 비워 두면 링크에서 자동 추출됩니다.
+        - 링크: SWEA(swexpertacademy.com) · 프로그래머스(programmers.co.kr) · 코드트리(codetree.ai) 링크만 지원합니다.
+        - 제목: 프로그래머스는 비워 두면 문제 페이지에서 자동으로 가져옵니다. SWEA·코드트리는 직접 입력해야 합니다.
+        - 번호: SWEA는 링크에 번호가 없어 직접 입력해야 합니다. 프로그래머스는 비워 두면 링크에서 자동 추출되고, 코드트리는 링크에서 문제 슬러그를 자동 추출합니다.
         - 난이도 / 마감일: 문제마다 다르면 각 줄에, 비워도 됩니다.
       placeholder: |
         https://school.programmers.co.kr/learn/courses/30/lessons/42627
         https://school.programmers.co.kr/learn/courses/30/lessons/12912 | | | Lv.1 | 2026-08-10
         https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=... | 백만 장자 프로젝트 | 1859 | D2 |
+        https://www.codetree.ai/training-field/frequent-problems/problems/codetree-omakase | 코드트리 오마카세 | | Gold |
     validations:
       required: true
 

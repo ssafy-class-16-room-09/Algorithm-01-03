@@ -27,7 +27,7 @@ export function parseIssueForm(body = '') {
 }
 
 export function platformLabel(key) {
-  return key === 'swea' ? 'SWEA' : key === 'pgs' ? '프로그래머스' : key;
+  return key === 'swea' ? 'SWEA' : key === 'pgs' ? '프로그래머스' : key === 'ct' ? '코드트리' : key;
 }
 
 /** 문제 링크 도메인으로부터 플랫폼을 추정한다. 알 수 없는 도메인이면 null. */
@@ -35,13 +35,23 @@ export function urlPlatformKey(url = '') {
   const v = url.toLowerCase();
   if (v.includes('swexpertacademy.com')) return 'swea';
   if (v.includes('programmers.co.kr')) return 'pgs';
+  if (v.includes('codetree.ai')) return 'ct';
   return null;
 }
 
-/** 프로그래머스 링크에서는 문제 번호를 뽑아낼 수 있다. SWEA 링크는 해시라 불가능. */
+/**
+ * 링크에서 문제 식별자를 뽑아낸다.
+ *  - 프로그래머스: `lessons/{번호}` 의 숫자
+ *  - 코드트리: 경로에 들어 있는 문제 슬러그 (하이픈 포함)
+ *      .../frequent-problems/artistry/description                     → artistry
+ *      .../training-field/frequent-problems/problems/codetree-omakase → codetree-omakase
+ *  - SWEA: 링크가 해시라 불가능 → null (번호 직접 입력)
+ */
 export function problemNumberFromUrl(url = '') {
   const pgs = url.match(/lessons\/(\d+)/);
   if (pgs) return pgs[1];
+  const ct = url.match(/codetree\.ai\/(?:[\w-]+\/)*(?:frequent-problems|problems)\/([a-z0-9][a-z0-9-]*)/i);
+  if (ct) return ct[1];
   return null;
 }
 
@@ -86,7 +96,7 @@ export function problemPath(week, pKey, number) {
 export function parseSolutionPath(filePath) {
   const m = filePath
     .replace(/\\/g, '/')
-    .match(/^solutions\/week-(\d{2})\/([a-z]+)-([A-Za-z0-9_]+)\/([^/]+)\/(.+)$/);
+    .match(/^solutions\/week-(\d{2})\/([a-z]+)-([A-Za-z0-9_-]+)\/([^/]+)\/(.+)$/);
   if (!m) return null;
   const [, week, pKey, number, author, rest] = m;
   return {
@@ -99,6 +109,22 @@ export function parseSolutionPath(filePath) {
     dir: `solutions/week-${week}/${pKey}-${number}/${author}`,
     problemDir: `solutions/week-${week}/${pKey}-${number}`,
   };
+}
+
+/** 풀이 하위 폴더 이름에 허용하는 문자 (컴파일 스텝이 공백으로 목록을 나누므로 공백 불가). */
+export const SOLUTION_VARIANT_RE = /^[A-Za-z0-9._-]+$/;
+
+/**
+ * 한 제출 파일이 속한 "솔루션 루트"를 구한다.
+ * 한 사람이 같은 문제에 여러 풀이를 낼 수 있도록, 본인 폴더 아래를
+ *   {아이디}/Solution.java         → 루트는 {아이디} 폴더 (파일을 바로 둔 경우)
+ *   {아이디}/v1/Solution.java      → 루트는 {아이디}/v1 (풀이별 하위 폴더)
+ * 로 나눈다. 루트마다 따로 컴파일하므로 v1·v2의 `Solution` 클래스가 충돌하지 않는다.
+ * parsed 는 parseSolutionPath()의 결과.
+ */
+export function solutionRoot(parsed) {
+  const slash = parsed.file.indexOf('/');
+  return slash === -1 ? parsed.dir : `${parsed.dir}/${parsed.file.slice(0, slash)}`;
 }
 
 /** .github/study-members.yml 의 members 목록. 없으면 레포 콜라보레이터로 대체. */

@@ -2,10 +2,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {
   REVIEW_MARKER,
+  SOLUTION_VARIANT_RE,
   ensureLabels,
   parseSolutionPath,
   platformLabel,
   readProblemMeta,
+  solutionRoot,
   upsertComment,
 } from './lib.mjs';
 
@@ -40,7 +42,7 @@ export async function run({ github, context, core }) {
     if (file.status === 'removed') continue;
 
     // 문제 폴더 자체의 메타 파일은 워크플로가 만든 것이라 그대로 통과시킨다.
-    if (/^solutions\/week-\d{2}\/[a-z]+-[A-Za-z0-9_]+\/(README\.md|\.problem\.json)$/.test(p)) {
+    if (/^solutions\/week-\d{2}\/[a-z]+-[A-Za-z0-9_-]+\/(README\.md|\.problem\.json)$/.test(p)) {
       warnings.push(`\`${p}\` — 문제 폴더 공용 파일을 수정했습니다. 의도한 변경인지 확인해 주세요.`);
       continue;
     }
@@ -70,10 +72,33 @@ export async function run({ github, context, core }) {
       continue;
     }
 
+    // 한 사람이 한 문제에 여러 풀이를 낼 수 있다. 본인 폴더 아래 하위 폴더(v1, bfs, dp ...)로 나누면
+    // 그 폴더 단위로 따로 컴파일한다. 하위 폴더를 안 쓰면 예전처럼 본인 폴더 전체가 한 풀이다.
+    const root = solutionRoot(parsed);
+    if (root !== parsed.dir) {
+      const variant = root.slice(parsed.dir.length + 1);
+      if (!SOLUTION_VARIANT_RE.test(variant)) {
+        errors.push(
+          `\`${p}\` — 풀이 하위 폴더 이름(\`${variant}\`)에는 영문·숫자·\`.\`·\`_\`·\`-\`만 쓸 수 있습니다. (예: \`${parsed.dir}/v2/Solution.java\`)`,
+        );
+        continue;
+      }
+    }
+
     javaCount += 1;
-    dirs.add(parsed.dir);
+    dirs.add(root);
     if (!problems.has(parsed.problemDir)) {
       problems.set(parsed.problemDir, readProblemMeta(workspace, parsed.problemDir));
+    }
+  }
+
+  // 같은 문제에서 "폴더에 바로 둔 풀이"와 "하위 폴더로 나눈 풀이"를 섞으면,
+  // 본인 폴더 전체를 컴파일할 때 하위 폴더 파일까지 딸려 와 클래스가 충돌한다.
+  for (const root of dirs) {
+    if ([...dirs].some((d) => d !== root && d.startsWith(`${root}/`))) {
+      errors.push(
+        `\`${root}\`에 풀이 파일을 바로 두면서 하위 폴더 풀이도 있습니다. 한 문제에서는 한 방식만 쓰세요 — 파일을 전부 \`${root}/v1/\` 같은 하위 폴더로 옮기거나, 하위 폴더를 없애 주세요.`,
+      );
     }
   }
 

@@ -29,6 +29,14 @@ function listDirs(dir) {
     .sort();
 }
 
+// 한 사람이 풀이를 하위 폴더(v1, v2 ...)로 나눠 낼 수 있으므로 .java 는 재귀로 찾는다.
+function hasJavaDeep(dir) {
+  return fs.readdirSync(dir, { withFileTypes: true }).some((e) => {
+    if (e.isDirectory()) return hasJavaDeep(path.join(dir, e.name));
+    return e.name.endsWith('.java');
+  });
+}
+
 const problems = [];
 const solvedBy = new Map();
 
@@ -47,9 +55,7 @@ for (const week of listDirs(SOLUTIONS)) {
     }
 
     const authors = listDirs(problemDir).filter((author) =>
-      fs
-        .readdirSync(path.join(problemDir, author))
-        .some((f) => f.endsWith('.java')),
+      hasJavaDeep(path.join(problemDir, author)),
     );
 
     for (const author of authors) {
