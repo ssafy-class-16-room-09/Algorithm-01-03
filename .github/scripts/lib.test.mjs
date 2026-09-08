@@ -10,9 +10,11 @@ import {
   parseProblemLine,
   parseProgrammersTitle,
   parseSolutionPath,
+  platformLabel,
   problemDir,
   problemPath,
   problemNumberFromUrl,
+  solutionRoot,
   urlPlatformKey,
   weekDir,
 } from './lib.mjs';
@@ -46,12 +48,29 @@ test('parseProblemLine: 뒤 필드가 생략돼도 빈 문자열로 채운다', 
 test('urlPlatformKey: 도메인으로 플랫폼을 판별한다', () => {
   assert.equal(urlPlatformKey('https://swexpertacademy.com/x'), 'swea');
   assert.equal(urlPlatformKey('https://school.programmers.co.kr/x'), 'pgs');
+  assert.equal(urlPlatformKey('https://www.codetree.ai/training-field/frequent-problems/problems/x'), 'ct');
   assert.equal(urlPlatformKey('https://example.com/x'), null);
 });
 
-test('problemNumberFromUrl: 프로그래머스 링크에서만 번호를 뽑는다', () => {
+test('platformLabel: 플랫폼 키를 한글/영문 표기로 바꾼다', () => {
+  assert.equal(platformLabel('swea'), 'SWEA');
+  assert.equal(platformLabel('pgs'), '프로그래머스');
+  assert.equal(platformLabel('ct'), '코드트리');
+  assert.equal(platformLabel('unknown'), 'unknown');
+});
+
+test('problemNumberFromUrl: 프로그래머스는 숫자 번호, 코드트리는 슬러그를 뽑는다', () => {
   assert.equal(problemNumberFromUrl('https://school.programmers.co.kr/learn/courses/30/lessons/12345'), '12345');
   assert.equal(problemNumberFromUrl('https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=1'), null);
+  assert.equal(
+    problemNumberFromUrl('https://www.codetree.ai/training-field/frequent-problems/problems/codetree-omakase'),
+    'codetree-omakase',
+  );
+  assert.equal(problemNumberFromUrl('https://www.codetree.ai/frequent-problems/artistry/description'), 'artistry');
+  assert.equal(
+    problemNumberFromUrl('https://www.codetree.ai/training-field/search/problems/two-people/submissions/1'),
+    'two-people',
+  );
 });
 
 test('parseProgrammersTitle: <title> 태그에서 문제 제목만 뽑는다', () => {
@@ -83,6 +102,31 @@ test('parseSolutionPath: 규칙에 맞는 경로를 해석한다', () => {
     dir: 'solutions/week-01/swea-1859/JooeonLee',
     problemDir: 'solutions/week-01/swea-1859',
   });
+});
+
+test('parseSolutionPath: 코드트리 슬러그(하이픈 포함)도 해석한다', () => {
+  const parsed = parseSolutionPath('solutions/week-05/ct-codetree-omakase/JooeonLee/Solution.java');
+  assert.deepEqual(parsed, {
+    week: 5,
+    weekDir: 'week-05',
+    platform: 'ct',
+    number: 'codetree-omakase',
+    author: 'JooeonLee',
+    file: 'Solution.java',
+    dir: 'solutions/week-05/ct-codetree-omakase/JooeonLee',
+    problemDir: 'solutions/week-05/ct-codetree-omakase',
+  });
+});
+
+test('solutionRoot: 본인 폴더에 바로 둔 파일은 본인 폴더가, 하위 폴더로 나눈 풀이는 그 폴더가 루트', () => {
+  const flat = parseSolutionPath('solutions/week-01/pgs-1/alice/Solution.java');
+  assert.equal(solutionRoot(flat), 'solutions/week-01/pgs-1/alice');
+
+  const v1 = parseSolutionPath('solutions/week-01/pgs-1/alice/v1/Solution.java');
+  assert.equal(solutionRoot(v1), 'solutions/week-01/pgs-1/alice/v1');
+
+  const nested = parseSolutionPath('solutions/week-01/pgs-1/alice/v2/pkg/Main.java');
+  assert.equal(solutionRoot(nested), 'solutions/week-01/pgs-1/alice/v2');
 });
 
 test('parseSolutionPath: 규칙에 안 맞으면 null', () => {

@@ -89,16 +89,16 @@ export async function run({ github, context, core, fetchImpl = fetch }) {
     if (!/^https?:\/\//.test(url)) lineErrors.push('링크가 올바른 URL이 아닙니다');
 
     const pKey = urlPlatformKey(url);
-    if (!pKey) lineErrors.push('SWEA 또는 프로그래머스 링크만 지원합니다');
+    if (!pKey) lineErrors.push('SWEA · 프로그래머스 · 코드트리 링크만 지원합니다');
 
     let number = rawNumber;
     if (!number) number = problemNumberFromUrl(url) || '';
-    if (!/^[A-Za-z0-9_]+$/.test(number)) {
-      lineErrors.push('번호를 입력해 주세요 (SWEA는 필수, 프로그래머스는 링크에서 자동 추출됩니다)');
+    if (!/^[A-Za-z0-9_-]+$/.test(number)) {
+      lineErrors.push('번호를 입력해 주세요 (SWEA는 필수, 프로그래머스는 링크에서 자동 추출, 코드트리는 링크에서 슬러그를 자동 추출합니다)');
     }
 
     let title = rawTitle;
-    if (!title && weekValid && pKey && /^[A-Za-z0-9_]+$/.test(number)) {
+    if (!title && weekValid && pKey && /^[A-Za-z0-9_-]+$/.test(number)) {
       // 같은 부모 이슈가 이미 등록해 둔 문제라면, 네트워크를 또 타지 않고 기존 제목을 그대로 쓴다.
       const existing = readProblemMeta(workspace, problemPath(week, pKey, number));
       if (existing?.parentIssue === parentIssue.number) title = existing.title;
@@ -306,6 +306,7 @@ export async function run({ github, context, core, fetchImpl = fetch }) {
       '- 폴더 이름은 **본인 GitHub 아이디**와 정확히 같아야 합니다.',
       '- 파일은 `.java`만 올립니다. 클래스명 충돌을 막기 위해 사람마다 폴더를 분리합니다.',
       '- 다른 사람 폴더는 건드리지 않습니다. (PR 검사에서 막힙니다)',
+      `- 풀이를 여러 개 내려면 본인 폴더 아래에 하위 폴더로 나누세요. 예) \`${dir}/<아이디>/v1/Solution.java\`, \`.../v2/Solution.java\` (폴더마다 따로 컴파일)`,
       '',
       '## 제출 현황',
       '',
