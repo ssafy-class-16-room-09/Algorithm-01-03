@@ -101,7 +101,7 @@ solutions/
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@babirakkk](https://github.com/babirakkk) | 21 / 30 | 70% |
+| 🥇 | [@babirakkk](https://github.com/babirakkk) | 22 / 30 | 73% |
 | 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 20 / 30 | 67% |
 | 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 19 / 30 | 63% |
 | 4 | [@JooeonLee](https://github.com/JooeonLee) | 19 / 30 | 63% |
@@ -129,7 +129,7 @@ solutions/
 | [프로그래머스 118669 · 등산코스 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/118669) | [#114](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/114) | 0 | - |
 | [프로그래머스 132266 · 부대복귀](https://school.programmers.co.kr/learn/courses/30/lessons/132266) | [#113](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/113) | 0 | - |
 | [프로그래머스 42893 · 매칭 점수](https://school.programmers.co.kr/learn/courses/30/lessons/42893) | [#115](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/115) | 0 | - |
-| [SWEA 1267 · 작업순서](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18TrIqIwUCFAZN) | [#116](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/116) | 0 | - |
+| [SWEA 1267 · 작업순서](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18TrIqIwUCFAZN) | [#116](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/116) | 1 | [@babirakkk](https://github.com/babirakkk) |
 | [SWEA 2382 · 미생물격리](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV597vbqAH0DFAVl) | [#117](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/117) | 1 | [@babirakkk](https://github.com/babirakkk) |
 
 </details>
