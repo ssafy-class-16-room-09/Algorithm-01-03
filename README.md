@@ -103,7 +103,7 @@ solutions/
 | --- | --- | --- | --- |
 | 🥇 | [@babirakkk](https://github.com/babirakkk) | 25 / 30 | 83% |
 | 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 25 / 30 | 83% |
-| 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 21 / 30 | 70% |
+| 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 22 / 30 | 73% |
 | 4 | [@JooeonLee](https://github.com/JooeonLee) | 21 / 30 | 70% |
 
 ### 📚 주차별 문제
@@ -126,7 +126,7 @@ solutions/
 
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
-| [프로그래머스 118669 · 등산코스 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/118669) | [#114](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/114) | 3 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@babirakkk](https://github.com/babirakkk) |
+| [프로그래머스 118669 · 등산코스 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/118669) | [#114](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/114) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 132266 · 부대복귀](https://school.programmers.co.kr/learn/courses/30/lessons/132266) | [#113](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/113) | 2 | [@Sionparadox](https://github.com/Sionparadox), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 42893 · 매칭 점수](https://school.programmers.co.kr/learn/courses/30/lessons/42893) | [#115](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/115) | 2 | [@Sionparadox](https://github.com/Sionparadox), [@babirakkk](https://github.com/babirakkk) |
 | [SWEA 1267 · 작업순서](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18TrIqIwUCFAZN) | [#116](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/116) | 3 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
