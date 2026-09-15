@@ -95,20 +95,33 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-09-10 · 등록된 문제 30개
+> 마지막 갱신: 2026-09-15 · 등록된 문제 35개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@babirakkk](https://github.com/babirakkk) | 25 / 30 | 83% |
-| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 25 / 30 | 83% |
-| 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 24 / 30 | 80% |
-| 4 | [@JooeonLee](https://github.com/JooeonLee) | 24 / 30 | 80% |
+| 🥇 | [@babirakkk](https://github.com/babirakkk) | 25 / 35 | 71% |
+| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 25 / 35 | 71% |
+| 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 24 / 35 | 69% |
+| 4 | [@JooeonLee](https://github.com/JooeonLee) | 24 / 35 | 69% |
 
 ### 📚 주차별 문제
 
 <details open>
+<summary><b>week-07</b> (5문제)</summary>
+
+| 문제 | 이슈 | 제출 | 제출자 |
+| --- | --- | --- | --- |
+| [코드트리 72501 · 미생물 연구](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/microbial-research/description) | [#168](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/168) | 0 | - |
+| [코드트리 72502 · 여왕개미](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/queen-ant/description) | [#167](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/167) | 0 | - |
+| [프로그래머스 258705 · 산 모양 타일링](https://school.programmers.co.kr/learn/courses/30/lessons/258705) | [#169](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/169) | 0 | - |
+| [프로그래머스 468373 · 바이러스 파이프](https://school.programmers.co.kr/learn/courses/30/lessons/468373) | [#170](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/170) | 0 | - |
+| [프로그래머스 468377 · 힌트 스테이지](https://school.programmers.co.kr/learn/courses/30/lessons/468377) | [#171](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/171) | 0 | - |
+
+</details>
+
+<details>
 <summary><b>week-06</b> (5문제)</summary>
 
 | 문제 | 이슈 | 제출 | 제출자 |
