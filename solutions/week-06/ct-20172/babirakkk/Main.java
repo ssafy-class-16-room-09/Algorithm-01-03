@@ -12,7 +12,7 @@ class Task {
     }
 }
 
-public class Main {
+public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int MAX_DAYS = Integer.parseInt(br.readLine()); // 일을 할 수 있는 최대 날짜
