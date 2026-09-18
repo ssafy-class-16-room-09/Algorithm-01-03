@@ -95,15 +95,15 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-09-15 · 등록된 문제 35개
+> 마지막 갱신: 2026-09-18 · 등록된 문제 35개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@babirakkk](https://github.com/babirakkk) | 25 / 35 | 71% |
-| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 25 / 35 | 71% |
-| 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 24 / 35 | 69% |
+| 🥇 | [@alswlfl29](https://github.com/alswlfl29) | 25 / 35 | 71% |
+| 🥈 | [@babirakkk](https://github.com/babirakkk) | 25 / 35 | 71% |
+| 🥉 | [@Sionparadox](https://github.com/Sionparadox) | 25 / 35 | 71% |
 | 4 | [@JooeonLee](https://github.com/JooeonLee) | 24 / 35 | 69% |
 
 ### 📚 주차별 문제
@@ -126,7 +126,7 @@ solutions/
 
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
-| [코드트리 20172 · 외주 수익 최대화하기](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/max-of-outsourcing-profit/description) | [#154](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/154) | 0 | - |
+| [코드트리 20172 · 외주 수익 최대화하기](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/max-of-outsourcing-profit/description) | [#154](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/154) | 1 | [@alswlfl29](https://github.com/alswlfl29) |
 | [코드트리 20252 · 가로등 설치](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/street-light-installation/description) | [#151](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/151) | 0 | - |
 | [프로그래머스 77486 · 다단계 칫솔 판매](https://school.programmers.co.kr/learn/courses/30/lessons/77486) | [#152](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/152) | 0 | - |
 | [프로그래머스 92343 · 양과 늑대](https://school.programmers.co.kr/learn/courses/30/lessons/92343) | [#153](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/153) | 0 | - |
