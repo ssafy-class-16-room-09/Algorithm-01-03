@@ -101,7 +101,7 @@ solutions/
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@alswlfl29](https://github.com/alswlfl29) | 25 / 35 | 71% |
+| 🥇 | [@alswlfl29](https://github.com/alswlfl29) | 26 / 35 | 74% |
 | 🥈 | [@babirakkk](https://github.com/babirakkk) | 25 / 35 | 71% |
 | 🥉 | [@Sionparadox](https://github.com/Sionparadox) | 25 / 35 | 71% |
 | 4 | [@JooeonLee](https://github.com/JooeonLee) | 24 / 35 | 69% |
@@ -129,7 +129,7 @@ solutions/
 | [코드트리 20172 · 외주 수익 최대화하기](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/max-of-outsourcing-profit/description) | [#154](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/154) | 1 | [@alswlfl29](https://github.com/alswlfl29) |
 | [코드트리 20252 · 가로등 설치](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/street-light-installation/description) | [#151](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/151) | 0 | - |
 | [프로그래머스 77486 · 다단계 칫솔 판매](https://school.programmers.co.kr/learn/courses/30/lessons/77486) | [#152](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/152) | 0 | - |
-| [프로그래머스 92343 · 양과 늑대](https://school.programmers.co.kr/learn/courses/30/lessons/92343) | [#153](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/153) | 0 | - |
+| [프로그래머스 92343 · 양과 늑대](https://school.programmers.co.kr/learn/courses/30/lessons/92343) | [#153](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/153) | 1 | [@alswlfl29](https://github.com/alswlfl29) |
 | [SWEA 25010 · 인기 검색어](https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AZt8IiBqxEDHBIN6&contestProbId=AZih7SL6varHBINp&probBoxId=AZt8IiBqxEHHBIN6&type=PROBLEM&problemBoxTitle=Pro+%EA%B8%B0%EC%B6%9C&problemBoxCnt=31) | [#150](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/150) | 0 | - |
 
 </details>
