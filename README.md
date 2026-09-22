@@ -95,20 +95,29 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-09-18 · 등록된 문제 35개
+> 마지막 갱신: 2026-09-22 · 등록된 문제 36개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@babirakkk](https://github.com/babirakkk) | 30 / 35 | 86% |
-| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 30 / 35 | 86% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 29 / 35 | 83% |
-| 4 | [@alswlfl29](https://github.com/alswlfl29) | 28 / 35 | 80% |
+| 🥇 | [@babirakkk](https://github.com/babirakkk) | 30 / 36 | 83% |
+| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 30 / 36 | 83% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 29 / 36 | 81% |
+| 4 | [@alswlfl29](https://github.com/alswlfl29) | 28 / 36 | 78% |
 
 ### 📚 주차별 문제
 
 <details open>
+<summary><b>week-08</b> (1문제)</summary>
+
+| 문제 | 이슈 | 제출 | 제출자 |
+| --- | --- | --- | --- |
+| [코드트리 three-at-dawn-and-four-at-dusk · 조삼모사](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/three-at-dawn-and-four-at-dusk/description) | [#188](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/188) | 0 | - |
+
+</details>
+
+<details>
 <summary><b>week-07</b> (5문제)</summary>
 
 | 문제 | 이슈 | 제출 | 제출자 |
