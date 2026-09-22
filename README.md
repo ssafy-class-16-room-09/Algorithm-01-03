@@ -103,8 +103,8 @@ solutions/
 | --- | --- | --- | --- |
 | 🥇 | [@babirakkk](https://github.com/babirakkk) | 31 / 36 | 86% |
 | 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 31 / 36 | 86% |
-| 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 29 / 36 | 81% |
-| 4 | [@JooeonLee](https://github.com/JooeonLee) | 29 / 36 | 81% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 30 / 36 | 83% |
+| 4 | [@alswlfl29](https://github.com/alswlfl29) | 29 / 36 | 81% |
 
 ### 📚 주차별 문제
 
@@ -113,7 +113,7 @@ solutions/
 
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
-| [코드트리 three-at-dawn-and-four-at-dusk · 조삼모사](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/three-at-dawn-and-four-at-dusk/description) | [#188](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/188) | 3 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
+| [코드트리 three-at-dawn-and-four-at-dusk · 조삼모사](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/three-at-dawn-and-four-at-dusk/description) | [#188](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/188) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 
 </details>
 
