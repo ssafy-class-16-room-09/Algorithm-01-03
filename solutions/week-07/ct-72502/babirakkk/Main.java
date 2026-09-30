@@ -4,8 +4,8 @@ import java.util.*;
 public class Main {
 
     static TreeSet<Integer> village; // 개미집의 위치를 관리하는 트리셋
-    static Map<Integer, Integer> findPositionById; // 개미집의 id로 위치를 찾기 위한 맵
-    static int lastHouseId; // 현재 지어진 집의 개수 (인덱스는 1부터 시작)
+    static Map<Integer, Integer> housePositionById; // 개미집의 id로 위치를 찾기 위한 맵
+    static int lastHouseId; // 현재까지 발급된 마지막 개미집 ID
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -13,7 +13,7 @@ public class Main {
         StringTokenizer st;
 
         village = new TreeSet<>();
-        findPositionById = new HashMap<>();
+        housePositionById = new HashMap<>();
         lastHouseId = 0;
 
         int queries = Integer.parseInt(br.readLine());
@@ -48,12 +48,12 @@ public class Main {
 
     private static void buildAntHouse(int buildPosition) {
         village.add(buildPosition);
-        findPositionById.put(++lastHouseId, buildPosition);
+        housePositionById.put(++lastHouseId, buildPosition);
     }
 
 
     private static void removeAntHouse(int removeId) {
-        int removePosition = findPositionById.get(removeId); // id로 위치 검색
+        int removePosition = housePositionById.get(removeId); // id로 위치를 찾고 삭제
         village.remove(removePosition);
     }
 
@@ -76,13 +76,16 @@ public class Main {
     }
 
     private static boolean isVillageSafe(int scoutAnts, int dist) {
-        int currAnts = 0; // 정찰에 필요한 개미 수
+        int usedScoutAnts = 0; // 정찰에 필요한 개미 수
         int nextUnsafeHousePosition = village.first();
-        while (currAnts < scoutAnts && nextUnsafeHousePosition <= village.last()) {
-            currAnts++;
-            if (nextUnsafeHousePosition + dist >= village.last()) return true; // 모든 집을 정찰할 수 있음
+        int lastHousePosition = village.last();
+        while (usedScoutAnts < scoutAnts) {
+            usedScoutAnts++;
+            if (nextUnsafeHousePosition + dist >= lastHousePosition) return true; // 모든 집을 정찰할 수 있음
             nextUnsafeHousePosition = village.higher(nextUnsafeHousePosition + dist);
         }
-        return (nextUnsafeHousePosition > village.last()); // 모든 일 개미가 다 dist만큼 이동해도 모든 집을 정찰할 수 없으면 false
+        return false; // 모든 일 개미가 다 dist만큼 이동해도 모든 집을 정찰할 수 없음
     }
 }
+
+
