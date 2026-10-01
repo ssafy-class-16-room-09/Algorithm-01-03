@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Solution {
+public class Main {
 
     static final int[] dr = { -1, 1, 0, 0 };
     static final int[] dc = { 0, 0, -1, 1 };
@@ -93,7 +93,7 @@ public class Solution {
         for (int i = r1; i < r2; i++) {
             for (int j = c1; j < c2; j++) {
                 if (container[i][j]  != EMPTY) {
-                	affectedMicrobes.add(microbeList[container[i][j]]);
+                    affectedMicrobes.add(microbeList[container[i][j]]);
                     microbeList[container[i][j]].byeMicrobe(i, j);
                 }
                 container[i][j] = putTime; // 투입 시간 == 미생물의 번호
@@ -130,7 +130,7 @@ public class Solution {
                 if (placed) break; // 만약 배치 가능하다면 더 이상 탐색할 필요 없음
                 for (int i = -N; i < N; i++) {
                     if (canPlace(curr, i, j)) {
-                    	placeMicrobe(curr, i, j);
+                        placeMicrobe(curr, i, j);
                         curr.baseR = i;
                         curr.baseC = j;
                         placed = true;
@@ -145,7 +145,7 @@ public class Solution {
         }
 
         boolean[][] visited = new boolean[N][N]; // 해당 셀의 방문 여부
-        boolean[][] added = new boolean[microbeList.length + 1][microbeList.length + 1]; // added[i][j] = true -> i와 j가 인접한 경우의 점수는 이미 계산 완료
+        boolean[][] added = new boolean[microbeList.length][microbeList.length]; // added[i][j] = true -> i와 j가 인접한 경우의 점수는 이미 계산 완료
         Queue<int[]> q = new ArrayDeque<>();
         q.add(new int[]{0, 0});
         int result = 0;
