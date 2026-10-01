@@ -95,20 +95,33 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-09-22 · 등록된 문제 36개
+> 마지막 갱신: 2026-10-01 · 등록된 문제 41개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@babirakkk](https://github.com/babirakkk) | 31 / 36 | 86% |
-| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 31 / 36 | 86% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 30 / 36 | 83% |
-| 4 | [@alswlfl29](https://github.com/alswlfl29) | 29 / 36 | 81% |
+| 🥇 | [@babirakkk](https://github.com/babirakkk) | 31 / 41 | 76% |
+| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 31 / 41 | 76% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 30 / 41 | 73% |
+| 4 | [@alswlfl29](https://github.com/alswlfl29) | 29 / 41 | 71% |
 
 ### 📚 주차별 문제
 
 <details open>
+<summary><b>week-09</b> (5문제)</summary>
+
+| 문제 | 이슈 | 제출 | 제출자 |
+| --- | --- | --- | --- |
+| [코드트리 900654 · 인접한 칸 선택](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-pick-adjacent-cells/description) | [#217](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/217) | 0 | - |
+| [코드트리 91102 · 편안한 워크숍](https://www.codetree.ai/ko/frequent-problems/hsat/problems/easy-workshop/description) | [#216](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/216) | 0 | - |
+| [코드트리 9202 · 사물인식 최소 면적 산출 프로그램](https://www.codetree.ai/ko/frequent-problems/hsat/problems/minimum-area-for-object-recognition/description) | [#218](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/218) | 0 | - |
+| [프로그래머스 67258 · 보석 쇼핑](https://school.programmers.co.kr/learn/courses/30/lessons/67258) | [#214](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/214) | 0 | - |
+| [프로그래머스 68646 · 풍선 터트리기](https://school.programmers.co.kr/learn/courses/30/lessons/68646) | [#215](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/215) | 0 | - |
+
+</details>
+
+<details>
 <summary><b>week-08</b> (1문제)</summary>
 
 | 문제 | 이슈 | 제출 | 제출자 |

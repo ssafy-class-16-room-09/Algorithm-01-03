@@ -1,0 +1,12 @@
+{
+  "issue": 218,
+  "parentIssue": 213,
+  "week": 9,
+  "platform": "ct",
+  "platformLabel": "코드트리",
+  "number": "9202",
+  "title": "사물인식 최소 면적 산출 프로그램",
+  "url": "https://www.codetree.ai/ko/frequent-problems/hsat/problems/minimum-area-for-object-recognition/description",
+  "difficulty": null,
+  "deadline": null
+}

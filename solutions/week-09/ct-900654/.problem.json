@@ -1,0 +1,12 @@
+{
+  "issue": 217,
+  "parentIssue": 213,
+  "week": 9,
+  "platform": "ct",
+  "platformLabel": "코드트리",
+  "number": "900654",
+  "title": "인접한 칸 선택",
+  "url": "https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-pick-adjacent-cells/description",
+  "difficulty": null,
+  "deadline": null
+}
