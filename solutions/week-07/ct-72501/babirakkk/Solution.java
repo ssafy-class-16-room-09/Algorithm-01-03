@@ -1,25 +1,25 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class Solution {
 
     static final int[] dr = { -1, 1, 0, 0 };
     static final int[] dc = { 0, 0, -1, 1 };
+    static final int EMPTY = 0;
     static int N, Q;
     static int[][] container;
     static Microbe[] microbeList;
-    static int EMPTY = 0;
 
     static class Microbe {
-        int putTime;
-        int leftMicrobe;
-        int r, c; // 왼쪽하단 좌표
+        int id;
+        int remainingMicrobe;
+        int baseR, baseC; // 왼쪽하단 좌표
         boolean[][] microbeStatus;
         Microbe(int putTime, int r1, int c1, int r2, int c2) {
-            this.putTime = putTime;
-            this.leftMicrobe = (r2 - r1) * (c2 - c1);
-            this.r = r1;
-            this.c = c1;
+            this.id = putTime;
+            this.remainingMicrobe = (r2 - r1) * (c2 - c1); // 초기 미생물 수는 사각형의 크기만큼
+            this.baseR = r1;
+            this.baseC = c1;
             microbeStatus = new boolean[r2- r1][c2 - c1];
             for (boolean[] row : microbeStatus) {
                 Arrays.fill(row, true);
@@ -27,8 +27,8 @@ public class Main {
         }
 
         void byeMicrobe(int mapR, int mapC) { // (mapR, mapC) 위치의 미생물을 먹힌 걸로 처리
-            microbeStatus[mapR - r][mapC - c] = false;
-            leftMicrobe--;
+            microbeStatus[mapR - baseR][mapC - baseC] = false;
+            remainingMicrobe--;
         }
 
         boolean isMicrobeSeparated() {
@@ -60,7 +60,7 @@ public class Main {
                 }
             }
 
-            return countMicrobe != leftMicrobe; // 두 무리로 나뉘지 않았다면 count == left 
+            return countMicrobe != remainingMicrobe; // 두 무리로 나뉘지 않았다면 count == left 
         }
 
     }
@@ -87,76 +87,72 @@ public class Main {
     }
 
     private static void putMicrobe(int putTime, int r1, int c1, int r2, int c2) { // x, y 좌표 주의
-        Set<Microbe> ateMicrobe = new HashSet<>();
+        Set<Microbe> affectedMicrobes = new HashSet<>(); // 새로 투입된 미생물에게 한 칸이라도 먹힌 미생물 그룹 -> 분리되었는지 검사 필요
         microbeList[putTime] = new Microbe(putTime, r1, c1, r2, c2);
         
         for (int i = r1; i < r2; i++) {
             for (int j = c1; j < c2; j++) {
                 if (container[i][j]  != EMPTY) {
-                    ateMicrobe.add(microbeList[container[i][j]]); // 먹힌 미생물 그룹에 추가
+                	affectedMicrobes.add(microbeList[container[i][j]]);
                     microbeList[container[i][j]].byeMicrobe(i, j);
                 }
                 container[i][j] = putTime; // 투입 시간 == 미생물의 번호
             }
         }
 
-        for (Microbe m : ateMicrobe) {
-            if (m.isMicrobeSeparated()) {
-                m.leftMicrobe = 0;
+        for (Microbe m : affectedMicrobes) {
+            if (m.isMicrobeSeparated()) { // 만약 두 무리로 나뉘었다면 해당 미생물 그룹은 소멸 처리
+                m.remainingMicrobe = 0;
             }
         }
 
     }
 
-    private static int moveMicrobe(int maxGroup) {
+    private static int moveMicrobe(int maxGroupId) {
         PriorityQueue<Microbe> pq = new PriorityQueue<>(
-            Comparator.comparingInt((Microbe m) -> m.leftMicrobe).reversed().thenComparingInt(m -> m.putTime));
+            Comparator.comparingInt((Microbe m) -> m.remainingMicrobe).reversed().thenComparingInt(m -> m.id));
         
-        for (int i = 1; i <= maxGroup; i++) {
-            if (microbeList[i].leftMicrobe != 0) {
+        for (int i = 1; i <= maxGroupId; i++) {
+            if (microbeList[i].remainingMicrobe != 0) { // 미생물이 남아있는 그룹을 pq에 추가
                 pq.add(microbeList[i]);
             }
         }
 
-        int[][] tempContainer = new int[N][N];
         for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
-                tempContainer[i][j] = container[i][j];
-                container[i][j] = EMPTY;
-            }
+            Arrays.fill(container[i], EMPTY);
         }
 
         while (!pq.isEmpty()) {
             Microbe curr = pq.poll();
 
-            boolean canFill = false;
+            boolean placed = false; // 현재 미생물 그룹의 배치 가능 여부
             for (int j = -N; j < N; j++) {
-                if (canFill) break;
+                if (placed) break; // 만약 배치 가능하다면 더 이상 탐색할 필요 없음
                 for (int i = -N; i < N; i++) {
-                    if (canMicrobeMove(curr, i, j)) {
-                        fillMicrobe(curr, i, j);
-                        curr.r = i;
-                        curr.c = j;
-                        canFill = true;
+                    if (canPlace(curr, i, j)) {
+                    	placeMicrobe(curr, i, j);
+                        curr.baseR = i;
+                        curr.baseC = j;
+                        placed = true;
                         break;
                     }
                 }
             }
 
-            if (!canFill) {
-                curr.leftMicrobe = 0;
+            if (!placed) { // 만약 아무 곳에도 배치할 수 없다면 소멸 처리
+                curr.remainingMicrobe = 0;
             }
         }
 
-        boolean[][] visitedCell = new boolean[N][N];
-        boolean[][] added = new boolean[microbeList.length + 1][microbeList.length + 1];
+        boolean[][] visited = new boolean[N][N]; // 해당 셀의 방문 여부
+        boolean[][] added = new boolean[microbeList.length + 1][microbeList.length + 1]; // added[i][j] = true -> i와 j가 인접한 경우의 점수는 이미 계산 완료
         Queue<int[]> q = new ArrayDeque<>();
         q.add(new int[]{0, 0});
         int result = 0;
         while (!q.isEmpty()) {
             int[] curr = q.poll();
-            if (visitedCell[curr[0]][curr[1]]) continue;
-            visitedCell[curr[0]][curr[1]] = true;
+            if (visited[curr[0]][curr[1]]) continue;
+            visited[curr[0]][curr[1]] = true;
 
             for (int d = 0; d < 4; d++) {
                 int nr = curr[0] + dr[d];
@@ -166,14 +162,10 @@ public class Main {
 
                 int currId = container[curr[0]][curr[1]];
                 int nextId = container[nr][nc];
-                if ((currId != 0 && nextId != 0) && currId != nextId && !added[currId][nextId]) {
+                if ((currId != 0 && nextId != 0) && currId != nextId && !added[currId][nextId]) { // 두 그룹이 인접한 경우를 아직 계산하지 않은 경우
                     added[currId][nextId] = true;
                     added[nextId][currId] = true;
-                    // if (maxGroup == 18) {
-                    //     System.out.println("id1: " + currId + ", size1: " + microbeList[currId].leftMicrobe 
-                    //     + ", id2: " + nextId + ", size2: " + microbeList[nextId].leftMicrobe);
-                    // }
-                    result += microbeList[currId].leftMicrobe * microbeList[nextId].leftMicrobe;
+                    result += microbeList[currId].remainingMicrobe * microbeList[nextId].remainingMicrobe;
                 }
                 q.add(new int[]{nr, nc});
             }
@@ -182,7 +174,10 @@ public class Main {
     }
 
 
-    private static boolean canMicrobeMove(Microbe m, int r, int c) {
+    /**
+     * 현재 위치에 미생물 그룹을 배치할 수 있는지 검사하는 함수
+     */
+    private static boolean canPlace(Microbe m, int r, int c) {
         for (int i = 0; i < m.microbeStatus.length; i++) {
             for (int j = 0; j < m.microbeStatus[0].length; j++) {
                 if (m.microbeStatus[i][j] && 
@@ -192,11 +187,13 @@ public class Main {
         return true;
     }
 
-    
-    private static void fillMicrobe(Microbe m, int r, int c) {
+    /**
+     * 현재 위치에 미생물 그룹을 배치하는 함수
+     */
+    private static void placeMicrobe(Microbe m, int r, int c) {
         for (int i = 0; i < m.microbeStatus.length; i++) {
             for (int j = 0; j < m.microbeStatus[0].length; j++) {
-                if (m.microbeStatus[i][j]) container[r + i][c + j] = m.putTime;
+                if (m.microbeStatus[i][j]) container[r + i][c + j] = m.id;
             }
         }
     }
