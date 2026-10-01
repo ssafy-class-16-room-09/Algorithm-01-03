@@ -126,7 +126,7 @@ public class Main {
             Microbe curr = pq.poll();
 
             boolean placed = false; // 현재 미생물 그룹의 배치 가능 여부
-            for (int j = -N; j < N; j++) {
+            for (int j = -N; j < N; j++) { // 사라진 부분이 용기 밖에 놓이는 위치까지 탐색하도록 탐색 범위를 (-N, -N)부터 설정
                 if (placed) break; // 만약 배치 가능하다면 더 이상 탐색할 필요 없음
                 for (int i = -N; i < N; i++) {
                     if (canPlace(curr, i, j)) {
