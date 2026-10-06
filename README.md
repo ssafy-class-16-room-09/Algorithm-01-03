@@ -103,7 +103,7 @@ solutions/
 | --- | --- | --- | --- |
 | 🥇 | [@babirakkk](https://github.com/babirakkk) | 36 / 41 | 88% |
 | 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 36 / 41 | 88% |
-| 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 33 / 41 | 80% |
+| 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 34 / 41 | 83% |
 | 4 | [@JooeonLee](https://github.com/JooeonLee) | 33 / 41 | 80% |
 
 ### 📚 주차별 문제
@@ -135,7 +135,7 @@ solutions/
 
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
-| [코드트리 72501 · 미생물 연구](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/microbial-research/description) | [#168](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/168) | 2 | [@Sionparadox](https://github.com/Sionparadox), [@babirakkk](https://github.com/babirakkk) |
+| [코드트리 72501 · 미생물 연구](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/microbial-research/description) | [#168](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/168) | 3 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [코드트리 72502 · 여왕개미](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/queen-ant/description) | [#167](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/167) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 258705 · 산 모양 타일링](https://school.programmers.co.kr/learn/courses/30/lessons/258705) | [#169](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/169) | 3 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 468373 · 바이러스 파이프](https://school.programmers.co.kr/learn/courses/30/lessons/468373) | [#170](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/170) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
