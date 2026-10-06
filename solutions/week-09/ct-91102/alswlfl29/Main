@@ -1,0 +1,87 @@
+import java.util.*;
+
+class Position implements Comparable<Position> {
+    int r;
+    int c;
+    int k; // 이동한 횟수
+    int max; // 이동한 등산로 중 인접한 높이의 차들 간의 최댓값
+
+    Position(int r, int c, int k, int max) {
+        this.r = r;
+        this.c = c;
+        this.k = k;
+        this.max = max;
+    }
+
+    @Override
+    public int compareTo(Position position) {
+        // 최대값 오름차순 정렬
+        if(this.max != position.max) return Integer.compare(this.max, position.max);
+        return Integer.compare(position.k, this.k); // 그 외는 이동 횟수 내림차순 정렬
+    }
+}
+
+public class Main {
+    static final int NO = Integer.MAX_VALUE;
+    // 0: 상, 1: 하, 2: 좌, 3: 우
+    static int[] dr = {-1, 1, 0, 0};
+    static int[] dc = {0, 0, -1, 1};
+    static int N;
+    static int K;
+    static int[][] grid;
+
+    static int minSub; // 등산로 차들의 최댓값 중 최소값
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        N = scanner.nextInt(); // 산 높이
+        K = scanner.nextInt(); // 등산로 길이
+        grid = new int[N][N]; // 산 정보
+        for (int i = 0; i < N; i++)
+            for (int j = 0; j < N; j++)
+                grid[i][j] = scanner.nextInt();
+
+
+        minSub = Integer.MAX_VALUE; // 최댓값 중 최소값
+        for(int r=0; r<N; r++) {
+            for(int c=0; c<N; c++) {
+                int max = makeRoute(r, c);
+                minSub = Math.min(minSub, max);
+            }
+        }
+        
+        if(minSub == Integer.MAX_VALUE) minSub = -1; // 조건 만족한 등산로가 하나도 존재하지 않는 경우
+        System.out.println(minSub);
+    }
+
+    private static int makeRoute(int r, int c) {
+        PriorityQueue<Position> positions = new PriorityQueue<>(); // 현재 이동가능한 위치
+        int[][] visited = new int[N][N]; // 현재 루트까지 이동했을 때 최댓값의 최소
+
+        positions.offer(new Position(r, c, 0, 0));
+
+        while(!positions.isEmpty()) {
+            Position position = positions.poll();
+            if(position.k == K-1) { // K 이상의 등산로 길이를 도달한 경우
+                return position.max;
+            }
+
+            for(int d=0; d<4; d++) {
+                int nr = position.r + dr[d];
+                int nc = position.c + dc[d];
+                // 범위 벗어나거나 더 작은 번호를 가진 높이인 경우는 무시
+                if(isOut(nr, nc) || grid[nr][nc] <= grid[position.r][position.c]) continue;
+                int sub = grid[nr][nc] - grid[position.r][position.c]; // 두 산의 차이
+                if(visited[nr][nc] == 0 || visited[nr][nc] >= sub) { // 처음 방문하거나 차이가 더 작거나 같은 경우 넣기
+                    positions.offer(new Position(nr, nc, position.k+1, Math.max(position.max, sub)));
+                    visited[nr][nc] = sub;
+                }
+            }
+        }
+        
+        return NO; // K 길이를 가진 등산로를 찾지 못한 경우(즉, 조건 만족 X)
+    }
+
+    private static boolean isOut(int r, int c) {
+        return r < 0 || r >= N || c < 0 || c >= N;
+    }
+}
