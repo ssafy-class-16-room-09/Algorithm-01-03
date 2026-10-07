@@ -39,10 +39,7 @@ class Solution {
             지금 슬라이딩 윈도우 방식 -> 맨 앞에 작은 값만 비교함 -> 루비가 두 번째 있으니까 dq에 있는 상태로 또 루비가 들어옴
             */
             
-            lastGemCounter[strToInt.get(gems[i])] = i; 
-            while (!dq.isEmpty() && dq.getLast().gemPosition > i) {
-                dq.removeLast();
-            }
+            lastGemCounter[strToInt.get(gems[i])] = i;
             dq.add(new Gem(strToInt.get(gems[i]), i));
             
             if (i >= firstIdxAllGemsAppear) {
