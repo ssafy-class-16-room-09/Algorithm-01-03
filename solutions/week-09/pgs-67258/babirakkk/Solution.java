@@ -14,11 +14,13 @@ class Solution {
         Set<String> gemSet = new HashSet<>();
         HashMap<String, Integer> strToInt = new HashMap<>();
         int gemId = 0;
-        int firstIdxAllGemsAppear = 0;
+        int firstIdxAllGemsAppear = 0; // 처음으로 모든 보석이 등장한 카운터의 위치
         
         for (int i = 0; i < gems.length; i++) {
             String g = gems[i];
             if (gemSet.contains(g)) continue;
+
+            // 등장하지 않았던 종류의 보석이라면
             gemSet.add(g);
             strToInt.put(g, gemId++);
             firstIdxAllGemsAppear = i;
@@ -26,7 +28,7 @@ class Solution {
         
         int minStartCounter = 0;
         int minEndCounter = firstIdxAllGemsAppear;
-        int[] lastGemCounter = new int[gemId];
+        int[] lastGemCounter = new int[gemId]; // 마지막으로 해당 보석이 등장한 카운터 위치
         Arrays.fill(lastGemCounter, -1);
         ArrayDeque<Gem> dq = new ArrayDeque<>(); // 오름차순
         
@@ -43,11 +45,11 @@ class Solution {
             dq.add(new Gem(strToInt.get(gems[i]), i));
             
             if (i >= firstIdxAllGemsAppear) {
-                while (dq.getFirst().gemPosition != lastGemCounter[dq.getFirst().gemId]) {
+                while (dq.getFirst().gemPosition != lastGemCounter[dq.getFirst().gemId]) { // 일치하지 않는다면 해당 보석이 가장 최근에 등장한 위치가 dq.getFirst()가 아니므로 제거
                     dq.removeFirst();
                 }
                 int currMinStartCounter = dq.getFirst().gemPosition;
-                if ((i - currMinStartCounter) < (minEndCounter - minStartCounter)) {
+                if ((i - currMinStartCounter) < (minEndCounter - minStartCounter)) { // 현재 구간의 길이가 이전 최소 길이보다 짧으면
                     minStartCounter = currMinStartCounter;
                     minEndCounter = i;
                 }
