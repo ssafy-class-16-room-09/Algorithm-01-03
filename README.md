@@ -101,7 +101,7 @@ solutions/
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 38 / 46 | 83% |
+| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 39 / 46 | 85% |
 | 🥈 | [@JooeonLee](https://github.com/JooeonLee) | 37 / 46 | 80% |
 | 🥉 | [@babirakkk](https://github.com/babirakkk) | 36 / 46 | 78% |
 | 4 | [@alswlfl29](https://github.com/alswlfl29) | 34 / 46 | 74% |
@@ -126,7 +126,7 @@ solutions/
 
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
-| [코드트리 900654 · 인접한 칸 선택](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-pick-adjacent-cells/description) | [#217](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/217) | 0 | - |
+| [코드트리 900654 · 인접한 칸 선택](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-pick-adjacent-cells/description) | [#217](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/217) | 1 | [@Sionparadox](https://github.com/Sionparadox) |
 | [코드트리 91102 · 편안한 워크숍](https://www.codetree.ai/ko/frequent-problems/hsat/problems/easy-workshop/description) | [#216](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/216) | 1 | [@Sionparadox](https://github.com/Sionparadox) |
 | [코드트리 9202 · 사물인식 최소 면적 산출 프로그램](https://www.codetree.ai/ko/frequent-problems/hsat/problems/minimum-area-for-object-recognition/description) | [#218](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/218) | 0 | - |
 | [프로그래머스 67258 · 보석 쇼핑](https://school.programmers.co.kr/learn/courses/30/lessons/67258) | [#214](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/214) | 1 | [@JooeonLee](https://github.com/JooeonLee) |
