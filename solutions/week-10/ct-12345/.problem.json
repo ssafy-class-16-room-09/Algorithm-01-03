@@ -1,0 +1,12 @@
+{
+  "issue": 244,
+  "parentIssue": 240,
+  "week": 10,
+  "platform": "ct",
+  "platformLabel": "코드트리",
+  "number": "12345",
+  "title": "도로 보수 로봇",
+  "url": "https://www.codetree.ai/ko/frequent-problems/hsat/problems/road-repair-robot/description",
+  "difficulty": null,
+  "deadline": null
+}

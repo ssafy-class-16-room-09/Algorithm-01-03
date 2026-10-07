@@ -1,0 +1,12 @@
+{
+  "issue": 245,
+  "parentIssue": 240,
+  "week": 10,
+  "platform": "ct",
+  "platformLabel": "코드트리",
+  "number": "67890",
+  "title": "코디의 보석 공방",
+  "url": "https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/jewel-workshop/description",
+  "difficulty": null,
+  "deadline": null
+}

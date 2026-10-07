@@ -95,20 +95,33 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-10-06 · 등록된 문제 41개
+> 마지막 갱신: 2026-10-07 · 등록된 문제 46개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@babirakkk](https://github.com/babirakkk) | 36 / 41 | 88% |
-| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 36 / 41 | 88% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 35 / 41 | 85% |
-| 4 | [@alswlfl29](https://github.com/alswlfl29) | 34 / 41 | 83% |
+| 🥇 | [@babirakkk](https://github.com/babirakkk) | 36 / 46 | 78% |
+| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 36 / 46 | 78% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 35 / 46 | 76% |
+| 4 | [@alswlfl29](https://github.com/alswlfl29) | 34 / 46 | 74% |
 
 ### 📚 주차별 문제
 
 <details open>
+<summary><b>week-10</b> (5문제)</summary>
+
+| 문제 | 이슈 | 제출 | 제출자 |
+| --- | --- | --- | --- |
+| [코드트리 12345 · 도로 보수 로봇](https://www.codetree.ai/ko/frequent-problems/hsat/problems/road-repair-robot/description) | [#244](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/244) | 0 | - |
+| [코드트리 67890 · 코디의 보석 공방](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/jewel-workshop/description) | [#245](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/245) | 0 | - |
+| [프로그래머스 118667 · 두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118667) | [#243](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/243) | 0 | - |
+| [프로그래머스 60057 · 문자열 압축](https://school.programmers.co.kr/learn/courses/30/lessons/60057) | [#242](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/242) | 0 | - |
+| [프로그래머스 72413 · 합승 택시 요금](https://school.programmers.co.kr/learn/courses/30/lessons/72413) | [#241](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/241) | 0 | - |
+
+</details>
+
+<details>
 <summary><b>week-09</b> (5문제)</summary>
 
 | 문제 | 이슈 | 제출 | 제출자 |
