@@ -104,7 +104,7 @@ solutions/
 | 🥇 | [@babirakkk](https://github.com/babirakkk) | 41 / 46 | 89% |
 | 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 41 / 46 | 89% |
 | 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 40 / 46 | 87% |
-| 4 | [@alswlfl29](https://github.com/alswlfl29) | 39 / 46 | 85% |
+| 4 | [@alswlfl29](https://github.com/alswlfl29) | 38 / 46 | 83% |
 
 ### 📚 주차별 문제
 
@@ -130,7 +130,7 @@ solutions/
 | [코드트리 91102 · 편안한 워크숍](https://www.codetree.ai/ko/frequent-problems/hsat/problems/easy-workshop/description) | [#216](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/216) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [코드트리 9202 · 사물인식 최소 면적 산출 프로그램](https://www.codetree.ai/ko/frequent-problems/hsat/problems/minimum-area-for-object-recognition/description) | [#218](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/218) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 67258 · 보석 쇼핑](https://school.programmers.co.kr/learn/courses/30/lessons/67258) | [#214](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/214) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
-| [프로그래머스 68646 · 풍선 터트리기](https://school.programmers.co.kr/learn/courses/30/lessons/68646) | [#215](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/215) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
+| [프로그래머스 68646 · 풍선 터트리기](https://school.programmers.co.kr/learn/courses/30/lessons/68646) | [#215](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/215) | 3 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@babirakkk](https://github.com/babirakkk) |
 
 </details>
 
