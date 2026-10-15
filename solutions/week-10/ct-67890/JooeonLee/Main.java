@@ -77,7 +77,6 @@ public class Main {
                 for (int i = 1; i < jewels.size(); i++) {
                     Jewel jewel = jewels.get(i);
 
-                    // 판매된 보석 또는 제한 무게를 초과하는 보석 제외
                     if (!jewel.active || jewel.weight > W)
                         continue;
 
@@ -114,7 +113,7 @@ public class Main {
                 // 정렬하면 두 보석의 무게 차이를 구간으로 관리할 수 있음
                 Arrays.sort(weights, 0, size);
 
-                long answer = 0; // 쌍의 개수가 int 범위를 초과할 수 있음
+                long answer = 0;
                 int left = 0;
 
                 for (int right = 0; right < size; right++) {
