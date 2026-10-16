@@ -101,9 +101,9 @@ solutions/
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 45 / 51 | 88% |
-| 🥈 | [@babirakkk](https://github.com/babirakkk) | 44 / 51 | 86% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 44 / 51 | 86% |
+| 🥇 | [@JooeonLee](https://github.com/JooeonLee) | 45 / 51 | 88% |
+| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 45 / 51 | 88% |
+| 🥉 | [@babirakkk](https://github.com/babirakkk) | 44 / 51 | 86% |
 | 4 | [@alswlfl29](https://github.com/alswlfl29) | 43 / 51 | 84% |
 | 5 | [@SIonparadox](https://github.com/SIonparadox) | 1 / 51 | 2% |
 
@@ -127,7 +127,7 @@ solutions/
 
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
-| [코드트리 12345 · 도로 보수 로봇](https://www.codetree.ai/ko/frequent-problems/hsat/problems/road-repair-robot/description) | [#244](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/244) | 3 | [@SIonparadox](https://github.com/SIonparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
+| [코드트리 12345 · 도로 보수 로봇](https://www.codetree.ai/ko/frequent-problems/hsat/problems/road-repair-robot/description) | [#244](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/244) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@SIonparadox](https://github.com/SIonparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [코드트리 67890 · 코디의 보석 공방](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/jewel-workshop/description) | [#245](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/245) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 118667 · 두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118667) | [#243](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/243) | 3 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29) |
 | [프로그래머스 60057 · 문자열 압축](https://school.programmers.co.kr/learn/courses/30/lessons/60057) | [#242](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/242) | 3 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29) |
