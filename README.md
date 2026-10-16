@@ -95,14 +95,14 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-10-13 · 등록된 문제 51개
+> 마지막 갱신: 2026-10-16 · 등록된 문제 51개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@babirakkk](https://github.com/babirakkk) | 41 / 51 | 80% |
-| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 41 / 51 | 80% |
+| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 42 / 51 | 82% |
+| 🥈 | [@babirakkk](https://github.com/babirakkk) | 41 / 51 | 80% |
 | 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 40 / 51 | 78% |
 | 4 | [@alswlfl29](https://github.com/alswlfl29) | 39 / 51 | 76% |
 
@@ -130,7 +130,7 @@ solutions/
 | [코드트리 67890 · 코디의 보석 공방](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/jewel-workshop/description) | [#245](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/245) | 0 | - |
 | [프로그래머스 118667 · 두 큐 합 같게 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/118667) | [#243](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/243) | 0 | - |
 | [프로그래머스 60057 · 문자열 압축](https://school.programmers.co.kr/learn/courses/30/lessons/60057) | [#242](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/242) | 0 | - |
-| [프로그래머스 72413 · 합승 택시 요금](https://school.programmers.co.kr/learn/courses/30/lessons/72413) | [#241](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/241) | 0 | - |
+| [프로그래머스 72413 · 합승 택시 요금](https://school.programmers.co.kr/learn/courses/30/lessons/72413) | [#241](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/241) | 1 | [@Sionparadox](https://github.com/Sionparadox) |
 
 </details>
 
