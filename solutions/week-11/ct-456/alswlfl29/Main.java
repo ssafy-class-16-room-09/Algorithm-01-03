@@ -18,11 +18,6 @@ class Baggage {
         this.count = 0;
         this.isBreak = false;
     }
-
-    @Override
-    public String toString() {
-        return "[number=" + number + ", cr=" + cr + ", cc=" + cc + ", weight=" + weight + ", count=" + count + ", isBreak=" + isBreak+ "]";
-    }
 }
 
 public class Main {
@@ -54,7 +49,7 @@ public class Main {
                 else convey[r][c] = -1;
             }
         }
-        // System.out.println(Arrays.deepToString(convey));
+
         B = Integer.parseInt(br.readLine());
         carringTurn = new int[B];
         waiting = new PriorityQueue<>((a, b) -> Integer.compare(a.inTurn, b.inTurn));
@@ -71,15 +66,10 @@ public class Main {
         conveyPos = new HashMap<>(); // 수하물 이동 후 상황
         int turn = 1;
         while(!waiting.isEmpty() || conveyPos.size() > 0) {
-            // System.out.println("turn> " + turn);
-            move();
-            //System.out.println("move> " + conveyPos);
-            checkDestinationAndBreak(turn);
-            //System.out.println("check> " + conveyPos);
-            //System.out.println("carringTurn> " + Arrays.toString(carringTurn));
-            inBaggage(turn);
-            //System.out.println("add> " + conveyPos);
-            turn++;
+            move(); // 수하물 이동
+            checkDestinationAndBreak(turn); // 적재 및 파손
+            inBaggage(turn); // 수하물 투입
+            turn++; // 턴 증가
         }
 
         StringBuilder sb = new StringBuilder();
@@ -100,7 +90,6 @@ public class Main {
         boolean[] newBaggage = new boolean[B]; // 이동한 곳이 새로운 곳인가
         while(!conveyStatus.isEmpty()) {
             Baggage baggage = conveyStatus.poll(); // 수하물 꺼내기
-            //System.out.println("baggage> " + baggage);
 
             int pos = baggage.cr*N+baggage.cc; // 수하물 현재 위치
             if(!isVisited[baggage.number]) { // 처음으로 이동시키는 수하물
@@ -127,11 +116,11 @@ public class Main {
                                 conveyPos.put(nr*N+nc, baggage); // 이동한 위치에 현재 수하물 놓기
                                 conveyStatus.offer(origin);
                             } else {
-                                newBaggage[baggage.number] = false;
+                                newBaggage[baggage.number] = false; // 이동 못함
                                 isVisited[baggage.number] = true;
                             }
                         } else { // 해당 수하물이 이동할 수 없는 수하물인 경우, 현재 수하물 원래자리로 돌아가기
-                            newBaggage[baggage.number] = false;
+                            newBaggage[baggage.number] = false; // 이동 못함
                             isVisited[baggage.number] = true;
                         }
                     }
@@ -146,10 +135,9 @@ public class Main {
                     Baggage origin = conveyPos.get(pos);
                     conveyStatus.offer(origin);
                 }
-                newBaggage[baggage.number] = false;
+                newBaggage[baggage.number] = false; // 이동 못함
                 conveyPos.put(pos, baggage);
             }
-            //System.out.println("baggage2> " + baggage);
         }
 
         for(int pos : conveyPos.keySet()) { // 최종 위치 갱신
@@ -158,8 +146,8 @@ public class Main {
             Baggage baggage = conveyPos.get(pos);
             baggage.cr = r;
             baggage.cc = c;
-            if(newBaggage[baggage.number]) baggage.count = 0;
-            else baggage.count++;
+            if(newBaggage[baggage.number]) baggage.count = 0; // 수하물이 이동된 경우 카운트 0으로 초기화
+            else baggage.count++; // 수하물이 이동 못하므로 카운트 증가
         }
     }
 
@@ -170,7 +158,7 @@ public class Main {
             for(int carringPos : carryingDestination) {
                 if(carringPos == pos) { // 내려 놓을 수 있는 곳
                     carringTurn[baggage.number] = turn;
-                    if(baggage.isBreak) carringTurn[baggage.number] *= -1;
+                    if(baggage.isBreak) carringTurn[baggage.number] *= -1; // 수하물이 파손된 경우 -1 곱하기
                     removePos.offer(pos);
                     continue OUTER;
                 }
@@ -180,7 +168,7 @@ public class Main {
                 baggage.isBreak = true;
             }
         }
-        while(!removePos.isEmpty()) {
+        while(!removePos.isEmpty()) { // 적재된 수하물 제거하기
           conveyPos.remove(removePos.poll());
         }
     }
