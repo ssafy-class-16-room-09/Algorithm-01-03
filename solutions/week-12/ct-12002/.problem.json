@@ -1,0 +1,12 @@
+{
+  "issue": 283,
+  "parentIssue": 281,
+  "week": 12,
+  "platform": "ct",
+  "platformLabel": "코드트리",
+  "number": "12002",
+  "title": "채광 로봇 시뮬레이션",
+  "url": "https://www.codetree.ai/ko/frequent-problems/hsat/problems/mining-robot-simulation/description",
+  "difficulty": null,
+  "deadline": null
+}

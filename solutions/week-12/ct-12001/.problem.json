@@ -1,0 +1,12 @@
+{
+  "issue": 282,
+  "parentIssue": 281,
+  "week": 12,
+  "platform": "ct",
+  "platformLabel": "코드트리",
+  "number": "12001",
+  "title": "배터리 효율 최적화 하기",
+  "url": "https://www.codetree.ai/ko/frequent-problems/hsat/problems/optimizing-battery-efficiency/description",
+  "difficulty": null,
+  "deadline": null
+}
