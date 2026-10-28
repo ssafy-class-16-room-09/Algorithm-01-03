@@ -103,8 +103,8 @@ solutions/
 | --- | --- | --- | --- |
 | 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 51 / 56 | 91% |
 | 🥈 | [@babirakkk](https://github.com/babirakkk) | 50 / 56 | 89% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 49 / 56 | 88% |
-| 4 | [@alswlfl29](https://github.com/alswlfl29) | 48 / 56 | 86% |
+| 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 49 / 56 | 88% |
+| 4 | [@JooeonLee](https://github.com/JooeonLee) | 49 / 56 | 88% |
 
 ### 📚 주차별 문제
 
@@ -128,7 +128,7 @@ solutions/
 | --- | --- | --- | --- |
 | [코드트리 101112 · 성적 평가](https://www.codetree.ai/ko/frequent-problems/hsat/problems/grading/description) | [#262](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/262) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [코드트리 123 · 3개씩 합치기](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-combine-3/description) | [#259](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/259) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
-| [코드트리 456 · 수하물 컨베이어 벨트](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/baggage-conveyor-belt/description) | [#260](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/260) | 1 | [@Sionparadox](https://github.com/Sionparadox) |
+| [코드트리 456 · 수하물 컨베이어 벨트](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/baggage-conveyor-belt/description) | [#260](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/260) | 2 | [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29) |
 | [코드트리 789 · 코디의 퍼즐 공방](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/cody-puzzle-workshop/description) | [#261](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/261) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 12927 · 야근 지수](https://school.programmers.co.kr/learn/courses/30/lessons/12927) | [#263](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/263) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 
