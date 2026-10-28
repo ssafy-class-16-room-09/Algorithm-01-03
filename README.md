@@ -95,20 +95,33 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-10-28 · 등록된 문제 56개
+> 마지막 갱신: 2026-10-28 · 등록된 문제 61개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 51 / 56 | 91% |
-| 🥈 | [@babirakkk](https://github.com/babirakkk) | 50 / 56 | 89% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 50 / 56 | 89% |
-| 4 | [@alswlfl29](https://github.com/alswlfl29) | 49 / 56 | 88% |
+| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 51 / 61 | 84% |
+| 🥈 | [@babirakkk](https://github.com/babirakkk) | 50 / 61 | 82% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 50 / 61 | 82% |
+| 4 | [@alswlfl29](https://github.com/alswlfl29) | 49 / 61 | 80% |
 
 ### 📚 주차별 문제
 
 <details open>
+<summary><b>week-13</b> (5문제)</summary>
+
+| 문제 | 이슈 | 제출 | 제출자 |
+| --- | --- | --- | --- |
+| [코드트리 2026222 · 식량 보급](https://www.codetree.ai/ko/frequent-problems/samsung-sw/problems/commissariat/description) | [#319](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/319) | 0 | - |
+| [프로그래머스 150366 · 표 병합](https://school.programmers.co.kr/learn/courses/30/lessons/150366) | [#321](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/321) | 0 | - |
+| [프로그래머스 1829 · 카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829) | [#322](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/322) | 0 | - |
+| [프로그래머스 64064 · 불량 사용자](https://school.programmers.co.kr/learn/courses/30/lessons/64064?utm_source=chatgpt.com) | [#323](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/323) | 0 | - |
+| [SWEA 4070 · [Professional] 타일링](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=5&problemLevel=6&contestProbId=AWI8A_hqZ70DFAUH&categoryId=AWI8A_hqZ70DFAUH&categoryType=CODE&problemTitle=&orderBy=PASS_RATE&selectCodeLang=JAVA&select-1=6&pageSize=10&pageIndex=2&problemLevel=5%2C6&&&&&&&&&) | [#320](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/320) | 0 | - |
+
+</details>
+
+<details>
 <summary><b>week-12</b> (5문제)</summary>
 
 | 문제 | 이슈 | 제출 | 제출자 |
