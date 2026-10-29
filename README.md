@@ -102,9 +102,9 @@ solutions/
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
 | 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 54 / 61 | 89% |
-| 🥈 | [@JooeonLee](https://github.com/JooeonLee) | 53 / 61 | 87% |
-| 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 52 / 61 | 85% |
-| 4 | [@babirakkk](https://github.com/babirakkk) | 52 / 61 | 85% |
+| 🥈 | [@babirakkk](https://github.com/babirakkk) | 53 / 61 | 87% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 53 / 61 | 87% |
+| 4 | [@alswlfl29](https://github.com/alswlfl29) | 52 / 61 | 85% |
 
 ### 📚 주차별 문제
 
@@ -129,7 +129,7 @@ solutions/
 | [코드트리 12001 · 배터리 효율 최적화 하기](https://www.codetree.ai/ko/frequent-problems/hsat/problems/optimizing-battery-efficiency/description) | [#282](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/282) | 0 | - |
 | [코드트리 12002 · 채광 로봇 시뮬레이션](https://www.codetree.ai/ko/frequent-problems/hsat/problems/mining-robot-simulation/description) | [#283](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/283) | 0 | - |
 | [코드트리 12003 · 보안 담당자](https://www.codetree.ai/ko/frequent-problems/hsat/problems/security-manager/description) | [#284](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/284) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
-| [코드트리 12004 · 동전 프로모션](https://www.codetree.ai/ko/frequent-problems/hsat/problems/coin-promotion/description) | [#285](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/285) | 3 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29) |
+| [코드트리 12004 · 동전 프로모션](https://www.codetree.ai/ko/frequent-problems/hsat/problems/coin-promotion/description) | [#285](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/285) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [코드트리 12005 · 자동차 전시장](https://www.codetree.ai/ko/frequent-problems/hsat/problems/car-showroom/description) | [#286](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/286) | 4 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 
 </details>
