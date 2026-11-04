@@ -29,7 +29,8 @@ class Solution {
                         int r = Integer.parseInt(st.nextToken());
                         int c = Integer.parseInt(st.nextToken());
                         String value = st.nextToken();
-                        update(r, c, value);
+                        Cell p = find(table[r][c]);
+                        update(p.r, p.c, value);
                     } else {
                         String value1 = st.nextToken();
                         String value2 = st.nextToken();
@@ -62,7 +63,7 @@ class Solution {
     }
     
     private void update(int r, int c, String value) {
-        find(table[r][c]).value = value;
+        table[r][c].value = value;
     }
     
     private void update(String target, String change) {
