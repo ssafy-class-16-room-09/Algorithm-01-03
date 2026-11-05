@@ -95,20 +95,33 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-10-29 · 등록된 문제 61개
+> 마지막 갱신: 2026-11-05 · 등록된 문제 66개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 54 / 61 | 89% |
-| 🥈 | [@babirakkk](https://github.com/babirakkk) | 53 / 61 | 87% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 53 / 61 | 87% |
-| 4 | [@alswlfl29](https://github.com/alswlfl29) | 52 / 61 | 85% |
+| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 54 / 66 | 82% |
+| 🥈 | [@babirakkk](https://github.com/babirakkk) | 53 / 66 | 80% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 53 / 66 | 80% |
+| 4 | [@alswlfl29](https://github.com/alswlfl29) | 52 / 66 | 79% |
 
 ### 📚 주차별 문제
 
 <details open>
+<summary><b>week-14</b> (5문제)</summary>
+
+| 문제 | 이슈 | 제출 | 제출자 |
+| --- | --- | --- | --- |
+| [코드트리 261105 · 빙하](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-glacier/description) | [#343](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/343) | 0 | - |
+| [프로그래머스 12979 · 기지국 설치](https://school.programmers.co.kr/learn/courses/30/lessons/12979) | [#341](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/341) | 0 | - |
+| [프로그래머스 12987 · 숫자 게임](https://school.programmers.co.kr/learn/courses/30/lessons/12987) | [#342](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/342) | 0 | - |
+| [프로그래머스 150365 · 미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365) | [#344](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/344) | 0 | - |
+| [프로그래머스 468370 · 중요한 단어를 스포 방지](https://school.programmers.co.kr/learn/courses/30/lessons/468370) | [#340](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/340) | 0 | - |
+
+</details>
+
+<details>
 <summary><b>week-13</b> (5문제)</summary>
 
 | 문제 | 이슈 | 제출 | 제출자 |
