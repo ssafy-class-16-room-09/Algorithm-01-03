@@ -103,8 +103,8 @@ solutions/
 | --- | --- | --- | --- |
 | 🥇 | [@alswlfl29](https://github.com/alswlfl29) | 56 / 66 | 85% |
 | 🥈 | [@babirakkk](https://github.com/babirakkk) | 55 / 66 | 83% |
-| 🥉 | [@Sionparadox](https://github.com/Sionparadox) | 54 / 66 | 82% |
-| 4 | [@JooeonLee](https://github.com/JooeonLee) | 53 / 66 | 80% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 54 / 66 | 82% |
+| 4 | [@Sionparadox](https://github.com/Sionparadox) | 54 / 66 | 82% |
 
 ### 📚 주차별 문제
 
@@ -130,7 +130,7 @@ solutions/
 | [프로그래머스 150366 · 표 병합](https://school.programmers.co.kr/learn/courses/30/lessons/150366) | [#321](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/321) | 2 | [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 1829 · 카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829) | [#322](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/322) | 1 | [@alswlfl29](https://github.com/alswlfl29) |
 | [프로그래머스 64064 · 불량 사용자](https://school.programmers.co.kr/learn/courses/30/lessons/64064?utm_source=chatgpt.com) | [#323](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/323) | 1 | [@alswlfl29](https://github.com/alswlfl29) |
-| [SWEA 4070 · [Professional] 타일링](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=5&problemLevel=6&contestProbId=AWI8A_hqZ70DFAUH&categoryId=AWI8A_hqZ70DFAUH&categoryType=CODE&problemTitle=&orderBy=PASS_RATE&selectCodeLang=JAVA&select-1=6&pageSize=10&pageIndex=2&problemLevel=5%2C6&&&&&&&&&) | [#320](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/320) | 0 | - |
+| [SWEA 4070 · [Professional] 타일링](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=5&problemLevel=6&contestProbId=AWI8A_hqZ70DFAUH&categoryId=AWI8A_hqZ70DFAUH&categoryType=CODE&problemTitle=&orderBy=PASS_RATE&selectCodeLang=JAVA&select-1=6&pageSize=10&pageIndex=2&problemLevel=5%2C6&&&&&&&&&) | [#320](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/320) | 1 | [@JooeonLee](https://github.com/JooeonLee) |
 
 </details>
 
