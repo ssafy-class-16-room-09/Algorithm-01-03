@@ -95,20 +95,33 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-11-09 · 등록된 문제 66개
+> 마지막 갱신: 2026-11-12 · 등록된 문제 71개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 59 / 66 | 89% |
-| 🥈 | [@babirakkk](https://github.com/babirakkk) | 58 / 66 | 88% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 58 / 66 | 88% |
-| 4 | [@alswlfl29](https://github.com/alswlfl29) | 57 / 66 | 86% |
+| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 59 / 71 | 83% |
+| 🥈 | [@babirakkk](https://github.com/babirakkk) | 58 / 71 | 82% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 58 / 71 | 82% |
+| 4 | [@alswlfl29](https://github.com/alswlfl29) | 57 / 71 | 80% |
 
 ### 📚 주차별 문제
 
 <details open>
+<summary><b>week-15</b> (5문제)</summary>
+
+| 문제 | 이슈 | 제출 | 제출자 |
+| --- | --- | --- | --- |
+| [코드트리 261112123 · 이진 트리 최대 경로 합](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-binary-tree-maximum-path-sum/description) | [#372](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/372) | 0 | - |
+| [코드트리 261112456 · 로봇의 이동](https://www.codetree.ai/ko/frequent-problems/acpc/problems/1-1783051346/description) | [#373](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/373) | 0 | - |
+| [코드트리 261112789 · 인접하지 않게 색칠하기](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-coloring-not-adjacently/description) | [#375](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/375) | 0 | - |
+| [프로그래머스 136797 · 숫자 타자 대회](https://school.programmers.co.kr/learn/courses/30/lessons/136797) | [#374](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/374) | 0 | - |
+| [프로그래머스 389480 · 완전 범죄](https://school.programmers.co.kr/learn/courses/30/lessons/389480) | [#371](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/371) | 0 | - |
+
+</details>
+
+<details>
 <summary><b>week-14</b> (5문제)</summary>
 
 | 문제 | 이슈 | 제출 | 제출자 |

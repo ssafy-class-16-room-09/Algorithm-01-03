@@ -1,0 +1,12 @@
+{
+  "issue": 372,
+  "parentIssue": 370,
+  "week": 15,
+  "platform": "ct",
+  "platformLabel": "코드트리",
+  "number": "261112123",
+  "title": "이진 트리 최대 경로 합",
+  "url": "https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-binary-tree-maximum-path-sum/description",
+  "difficulty": null,
+  "deadline": null
+}
