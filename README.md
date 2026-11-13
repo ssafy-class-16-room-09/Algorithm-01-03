@@ -102,7 +102,7 @@ solutions/
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
 | 🥇 | [@JooeonLee](https://github.com/JooeonLee) | 63 / 71 | 89% |
-| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 59 / 71 | 83% |
+| 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 60 / 71 | 85% |
 | 🥉 | [@babirakkk](https://github.com/babirakkk) | 58 / 71 | 82% |
 | 4 | [@alswlfl29](https://github.com/alswlfl29) | 57 / 71 | 80% |
 
@@ -126,7 +126,7 @@ solutions/
 
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
-| [코드트리 261105 · 빙하](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-glacier/description) | [#343](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/343) | 1 | [@JooeonLee](https://github.com/JooeonLee) |
+| [코드트리 261105 · 빙하](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-glacier/description) | [#343](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/343) | 2 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox) |
 | [프로그래머스 12979 · 기지국 설치](https://school.programmers.co.kr/learn/courses/30/lessons/12979) | [#341](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/341) | 1 | [@JooeonLee](https://github.com/JooeonLee) |
 | [프로그래머스 12987 · 숫자 게임](https://school.programmers.co.kr/learn/courses/30/lessons/12987) | [#342](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/342) | 1 | [@JooeonLee](https://github.com/JooeonLee) |
 | [프로그래머스 150365 · 미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365) | [#344](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/344) | 1 | [@JooeonLee](https://github.com/JooeonLee) |
