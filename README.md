@@ -102,8 +102,8 @@ solutions/
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
 | 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 64 / 71 | 90% |
-| 🥈 | [@JooeonLee](https://github.com/JooeonLee) | 63 / 71 | 89% |
-| 🥉 | [@babirakkk](https://github.com/babirakkk) | 62 / 71 | 87% |
+| 🥈 | [@babirakkk](https://github.com/babirakkk) | 63 / 71 | 89% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 63 / 71 | 89% |
 | 4 | [@alswlfl29](https://github.com/alswlfl29) | 57 / 71 | 80% |
 
 ### 📚 주차별 문제
@@ -126,7 +126,7 @@ solutions/
 
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
-| [코드트리 261105 · 빙하](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-glacier/description) | [#343](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/343) | 2 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox) |
+| [코드트리 261105 · 빙하](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-glacier/description) | [#343](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/343) | 3 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 12979 · 기지국 설치](https://school.programmers.co.kr/learn/courses/30/lessons/12979) | [#341](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/341) | 3 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 12987 · 숫자 게임](https://school.programmers.co.kr/learn/courses/30/lessons/12987) | [#342](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/342) | 3 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@babirakkk](https://github.com/babirakkk) |
 | [프로그래머스 150365 · 미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365) | [#344](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/344) | 3 | [@JooeonLee](https://github.com/JooeonLee), [@Sionparadox](https://github.com/Sionparadox), [@babirakkk](https://github.com/babirakkk) |
