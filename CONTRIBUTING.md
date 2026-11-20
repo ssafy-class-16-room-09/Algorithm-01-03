@@ -41,8 +41,11 @@ solutions/week-{2자리}/{플랫폼}-{문제번호}/{내 GitHub 아이디}/*.jav
 | SWEA | `swea` | `solutions/week-01/swea-1859/JooeonLee/Solution.java` |
 | 프로그래머스 | `pgs` | `solutions/week-01/pgs-12945/JooeonLee/Solution.java` |
 | 코드트리 | `ct` | `solutions/week-01/ct-codetree-omakase/JooeonLee/Solution.java` |
+| 백준 | `boj` | `solutions/week-01/boj-16236/JooeonLee/Main.java` |
+| 정올 | `jungol` | `solutions/week-01/jungol-1101/JooeonLee/Main.java` |
 
 코드트리는 문제 번호가 없어 링크의 슬러그(`.../problems/codetree-omakase` → `codetree-omakase`)를 식별자로 씁니다.
+백준·정올은 채점기가 `public class Main`을 요구하니 파일도 `Main.java`로 두면 사이트에 그대로 붙여 넣을 수 있습니다.
 
 여러 파일로 나눠도 됩니다. 본인 폴더 안이기만 하면 됩니다.
 
@@ -101,12 +104,15 @@ solutions/week-02/pgs-42586/JooeonLee/
 - 이 이슈가 **주차 이슈(부모)**가 되고, 문제마다 **하위 이슈(자식)**를 새로 만들어
   [Sub-issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/adding-sub-issues) API로 연결합니다.
   실제 풀이 폴더/README/제출 체크리스트는 전부 하위 이슈 쪽에 달립니다.
-- 플랫폼은 링크 도메인(`swexpertacademy.com` / `programmers.co.kr` / `codetree.ai`)으로 자동 판별합니다. 다른 도메인이거나 선택한 플랫폼과 다르면 등록이 실패합니다.
-- 번호는 SWEA만 직접 입력하면 됩니다. 프로그래머스는 링크에서 자동 추출되고, 코드트리는 링크의 문제 슬러그를 자동 추출합니다(추출 실패 시 직접 입력).
-- **제목은 프로그래머스만 비워 둬도 됩니다.** 문제 페이지의 `<title>`(로그인 없이도 노출됨)에서 자동으로 가져옵니다.
-  실패하면(네트워크 오류, 사이트 개편 등) "제목을 자동으로 가져오지 못했습니다" 에러로 떨어지니 그때 직접 적어 주세요.
+- 플랫폼은 링크 도메인(`swexpertacademy.com` / `programmers.co.kr` / `codetree.ai` / `acmicpc.net`·`boj.kr` / `jungol.co.kr`)으로 자동 판별합니다. 다른 도메인이면 등록이 실패합니다.
+- 번호는 SWEA만 직접 입력하면 됩니다. 프로그래머스·백준·정올은 링크에서 자동 추출되고, 코드트리는 링크의 문제 슬러그를 자동 추출합니다(추출 실패 시 직접 입력).
+  - 백준 대회 전용 링크(`/contest/problem/{대회}/{순번}`)는 전체 문제 번호가 아니라서 번호를 직접 적어야 합니다.
+  - 백준·정올 링크는 정식 주소(`https://acmicpc.net/problem/{번호}`, `https://jungol.co.kr/problem/{번호}`)로 바꿔서 저장합니다. `www.`·`boj.kr` 단축 주소·정올의 `?cursor=...` 는 떼어 냅니다.
+- **제목은 프로그래머스·백준·정올은 비워 둬도 됩니다.** 문제 페이지의 `<title>`(로그인 없이도 노출됨)에서 자동으로 가져옵니다.
+  실패하면(네트워크 오류, 사이트 개편, 봇 차단, 없는 번호 등) "제목을 자동으로 가져오지 못했습니다" 에러로 떨어지니 그때 직접 적어 주세요.
   SWEA·코드트리는 로그인이 있어야 보이는 페이지라 자동 추출이 안 되고, 항상 직접 입력해야 합니다.
-  → 프로그래머스 문제만 등록할 땐 파이프 없이 **링크 한 줄**로 충분합니다.
+  → 프로그래머스·백준·정올 문제만 등록할 땐 파이프 없이 **링크 한 줄**로 충분합니다.
+- 난이도는 자동으로 채우지 않습니다. 백준 티어(solved.ac)는 API가 봇 차단(Cloudflare) 상태라 쓰지 않으니, 필요하면 `난이도` 칸에 직접 적어 주세요.
 - 하위 이슈는 전원이 제출하면 자동으로 닫히고, 주차 이슈에 연결된 하위 이슈가 모두 닫히면 주차 이슈도 자동으로 닫힙니다.
 - 같은 주차·플랫폼·번호 조합을 다른 주차 이슈에서 이미 등록했다면 등록이 거부됩니다.
 - 하위 이슈에는 `problem` 라벨을 붙이지 않습니다 (`sub-problem` 라벨을 대신 씁니다). 등록 워크플로가 `problem` 라벨이나

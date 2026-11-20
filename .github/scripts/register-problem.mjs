@@ -2,11 +2,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {
   REGISTER_MARKER,
+  canonicalProblemUrl,
   checklistMarker,
   ensureLabels,
   findProblemDirsByParentIssue,
   getMembers,
+  parseBojTitle,
   parseIssueForm,
+  parseJungolTitle,
   parseProblemLine,
   parseProgrammersTitle,
   platformLabel,
@@ -19,18 +22,30 @@ import {
 } from './lib.mjs';
 
 /**
- * 프로그래머스는 로그인 없이도 <title>에 문제 제목이 그대로 내려오길래,
- * 제목을 안 적으면 페이지에서 긁어온다. 실패하면(느림/구조 변경/네트워크 오류) null —
- * 호출 쪽에서 "제목을 입력해 주세요" 에러로 안전하게 떨어진다.
+ * 로그인 없이도 문제 페이지 <title>에 제목이 그대로 내려오는 플랫폼.
+ * 제목을 안 적으면 페이지에서 긁어온다. (문제 등록 때 문제당 GET 1회뿐 — 백준 약관의
+ * "과도한 자동화 접근"에 해당하지 않는 수준이고, robots.txt 에서도 /problem/ 은 허용돼 있다)
  */
-async function fetchProgrammersTitle(url, fetchImpl) {
+const TITLE_PARSERS = {
+  pgs: (html) => parseProgrammersTitle(html),
+  boj: (html, number) => parseBojTitle(html, number),
+  jungol: (html, number) => parseJungolTitle(html, number),
+};
+
+/**
+ * 실패하면(느림/구조 변경/봇 차단/네트워크 오류) null —
+ * 호출 쪽에서 "제목을 직접 입력해 주세요" 에러로 안전하게 떨어진다.
+ */
+async function fetchTitle(pKey, url, number, fetchImpl) {
+  const parse = TITLE_PARSERS[pKey];
+  if (!parse) return null;
   try {
     const res = await fetchImpl(url, {
       headers: { 'User-Agent': 'Mozilla/5.0 (compatible; algo-study-bot)' },
       signal: AbortSignal.timeout(8000),
     });
     if (!res.ok) return null;
-    return parseProgrammersTitle(await res.text());
+    return parse(await res.text(), number);
   } catch {
     return null;
   }
@@ -83,19 +98,22 @@ export async function run({ github, context, core, fetchImpl = fetch }) {
   const items = [];
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
-    const { url, title: rawTitle, number: rawNumber, difficulty, deadline } = parseProblemLine(line);
+    const { url: rawUrl, title: rawTitle, number: rawNumber, difficulty, deadline } = parseProblemLine(line);
     const lineErrors = [];
 
-    if (!/^https?:\/\//.test(url)) lineErrors.push('링크가 올바른 URL이 아닙니다');
+    if (!/^https?:\/\//.test(rawUrl)) lineErrors.push('링크가 올바른 URL이 아닙니다');
 
-    const pKey = urlPlatformKey(url);
-    if (!pKey) lineErrors.push('SWEA · 프로그래머스 · 코드트리 링크만 지원합니다');
+    const pKey = urlPlatformKey(rawUrl);
+    if (!pKey) lineErrors.push('SWEA · 프로그래머스 · 코드트리 · 백준 · 정올 링크만 지원합니다');
 
     let number = rawNumber;
-    if (!number) number = problemNumberFromUrl(url) || '';
+    if (!number) number = problemNumberFromUrl(rawUrl) || '';
     if (!/^[A-Za-z0-9_-]+$/.test(number)) {
-      lineErrors.push('번호를 입력해 주세요 (SWEA는 필수, 프로그래머스는 링크에서 자동 추출, 코드트리는 링크에서 슬러그를 자동 추출합니다)');
+      lineErrors.push('번호를 입력해 주세요 (SWEA는 필수, 프로그래머스·백준·정올은 링크에서 번호를, 코드트리는 슬러그를 자동 추출합니다)');
+    } else if ((pKey === 'boj' || pKey === 'jungol') && !/^\d+$/.test(number)) {
+      lineErrors.push(`${platformLabel(pKey)} 문제 번호는 숫자여야 합니다`);
     }
+    const url = canonicalProblemUrl(pKey, rawUrl, number);
 
     let title = rawTitle;
     if (!title && weekValid && pKey && /^[A-Za-z0-9_-]+$/.test(number)) {
@@ -103,12 +121,14 @@ export async function run({ github, context, core, fetchImpl = fetch }) {
       const existing = readProblemMeta(workspace, problemPath(week, pKey, number));
       if (existing?.parentIssue === parentIssue.number) title = existing.title;
     }
-    if (!title && pKey === 'pgs') {
-      title = (await fetchProgrammersTitle(url, fetchImpl)) || '';
+    const autoTitle = Boolean(TITLE_PARSERS[pKey]);
+    if (!title && autoTitle && !lineErrors.length) {
+      title = (await fetchTitle(pKey, url, number, fetchImpl)) || '';
     }
-    if (!title) {
+    // 자동 추출 플랫폼인데 링크/번호부터 틀렸으면, 그 에러만 보여 준다 (제목 에러는 고치고 나면 사라진다).
+    if (!title && !(autoTitle && lineErrors.length)) {
       lineErrors.push(
-        pKey === 'pgs'
+        autoTitle
           ? '제목을 자동으로 가져오지 못했습니다. 직접 입력해 주세요.'
           : '제목을 입력해 주세요',
       );

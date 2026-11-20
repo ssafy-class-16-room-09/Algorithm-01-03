@@ -293,3 +293,86 @@ test('목록에서 줄을 빼도 제출물이 있으면 폴더를 지우지 않�
 
   assert.equal(fs.existsSync(path.join(workspace, 'solutions/week-01/pgs-222')), true);
 });
+
+test('백준 링크만 적으면 번호·제목을 자동으로 채우고, www/단축 주소는 정식 주소로 저장한다', async () => {
+  const { data: parent } = await github.rest.issues.create({ title: '[문제]' });
+  const b = body(14, 'https://boj.kr/16236');
+  const fetchCalls = [];
+  const fetchImpl = async (url) => {
+    fetchCalls.push(url);
+    return { ok: true, text: async () => '<title>16236번: 아기 상어</title>' };
+  };
+  const core = makeCore();
+  await registerRun({ github, context: issueContext(OWNER, REPO, parent.number, b), core, fetchImpl });
+
+  assert.equal(core._outputs.__failed, undefined);
+  assert.deepEqual(fetchCalls, ['https://acmicpc.net/problem/16236']);
+  const meta = readMeta('solutions/week-14/boj-16236');
+  assert.equal(meta.platform, 'boj');
+  assert.equal(meta.platformLabel, '백준');
+  assert.equal(meta.number, '16236');
+  assert.equal(meta.title, '아기 상어');
+  assert.equal(meta.url, 'https://acmicpc.net/problem/16236');
+});
+
+test('백준 없는 번호(제목이 사이트 기본값)면 직접 입력하라는 에러로 떨어진다', async () => {
+  const { data: parent } = await github.rest.issues.create({ title: '[문제]' });
+  const b = body(14, 'https://acmicpc.net/problem/1');
+  const fetchImpl = async () => ({ ok: true, text: async () => '<title>Baekjoon Online Judge</title>' });
+  const core = makeCore();
+  await registerRun({ github, context: issueContext(OWNER, REPO, parent.number, b), core, fetchImpl });
+  assert.match(core._outputs.__failed, /제목을 자동으로 가져오지 못했습니다/);
+});
+
+test('백준 대회 전용 링크는 번호를 직접 적으면 등록되고, 제목을 적었으면 네트워크를 타지 않는다', async () => {
+  const { data: parent } = await github.rest.issues.create({ title: '[문제]' });
+  const b = body(14, 'https://acmicpc.net/contest/problem/1234/1 | 아기 상어 | 16236 | Gold 3 |');
+  let fetchCalled = false;
+  const fetchImpl = async () => {
+    fetchCalled = true;
+    return { ok: true, text: async () => '' };
+  };
+  const core = makeCore();
+  await registerRun({ github, context: issueContext(OWNER, REPO, parent.number, b), core, fetchImpl });
+  assert.equal(core._outputs.__failed, undefined);
+  assert.equal(fetchCalled, false);
+  const meta = readMeta('solutions/week-14/boj-16236');
+  assert.equal(meta.url, 'https://acmicpc.net/problem/16236');
+  assert.equal(meta.difficulty, 'Gold 3');
+});
+
+test('백준 번호에 숫자가 아닌 값을 적으면 거부한다', async () => {
+  const { data: parent } = await github.rest.issues.create({ title: '[문제]' });
+  const b = body(14, 'https://acmicpc.net/contest/problem/1234/1 | 아기 상어 | baby-shark | |');
+  const core = makeCore();
+  await registerRun({ github, context: issueContext(OWNER, REPO, parent.number, b), core, fetchImpl: async () => ({ ok: false }) });
+  assert.match(core._outputs.__failed, /백준 문제 번호는 숫자여야 합니다/);
+});
+
+test('정올 링크(?cursor 포함)만 적으면 번호·제목을 자동으로 채운다', async () => {
+  const { data: parent } = await github.rest.issues.create({ title: '[문제]' });
+  const b = body(14, 'https://jungol.co.kr/problem/1101?cursor=OCwzLDE=');
+  const fetchCalls = [];
+  const fetchImpl = async (url) => {
+    fetchCalls.push(url);
+    return { ok: true, text: async () => '<title>1101번: 신기한 수열 - 정올 JUNGOL</title>' };
+  };
+  const core = makeCore();
+  await registerRun({ github, context: issueContext(OWNER, REPO, parent.number, b), core, fetchImpl });
+
+  assert.equal(core._outputs.__failed, undefined);
+  assert.deepEqual(fetchCalls, ['https://jungol.co.kr/problem/1101']);
+  const meta = readMeta('solutions/week-14/jungol-1101');
+  assert.equal(meta.platformLabel, '정올');
+  assert.equal(meta.title, '신기한 수열');
+  assert.equal(meta.url, 'https://jungol.co.kr/problem/1101');
+});
+
+test('정올 페이지가 봇 차단(403)되면 직접 입력하라는 에러로 떨어진다', async () => {
+  const { data: parent } = await github.rest.issues.create({ title: '[문제]' });
+  const b = body(14, 'https://jungol.co.kr/problem/1101');
+  const fetchImpl = async () => ({ ok: false, status: 403 });
+  const core = makeCore();
+  await registerRun({ github, context: issueContext(OWNER, REPO, parent.number, b), core, fetchImpl });
+  assert.match(core._outputs.__failed, /제목을 자동으로 가져오지 못했습니다/);
+});
