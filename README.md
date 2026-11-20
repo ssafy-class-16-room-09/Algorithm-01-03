@@ -95,20 +95,30 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-11-20 · 등록된 문제 71개
+> 마지막 갱신: 2026-11-20 · 등록된 문제 73개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 64 / 71 | 90% |
-| 🥈 | [@babirakkk](https://github.com/babirakkk) | 63 / 71 | 89% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 63 / 71 | 89% |
-| 4 | [@alswlfl29](https://github.com/alswlfl29) | 62 / 71 | 87% |
+| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 64 / 73 | 88% |
+| 🥈 | [@babirakkk](https://github.com/babirakkk) | 63 / 73 | 86% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 63 / 73 | 86% |
+| 4 | [@alswlfl29](https://github.com/alswlfl29) | 62 / 73 | 85% |
 
 ### 📚 주차별 문제
 
 <details open>
+<summary><b>week-99</b> (2문제)</summary>
+
+| 문제 | 이슈 | 제출 | 제출자 |
+| --- | --- | --- | --- |
+| [백준 1000 · A+B](https://acmicpc.net/problem/1000) | [#382](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/382) | 0 | - |
+| [정올 1000 · 두 정수 더하기 (A+B)](https://jungol.co.kr/problem/1000) | [#383](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/383) | 0 | - |
+
+</details>
+
+<details>
 <summary><b>week-15</b> (5문제)</summary>
 
 | 문제 | 이슈 | 제출 | 제출자 |

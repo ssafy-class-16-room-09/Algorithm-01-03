@@ -1,0 +1,12 @@
+{
+  "issue": 383,
+  "parentIssue": 381,
+  "week": 99,
+  "platform": "jungol",
+  "platformLabel": "정올",
+  "number": "1000",
+  "title": "두 정수 더하기 (A+B)",
+  "url": "https://jungol.co.kr/problem/1000",
+  "difficulty": null,
+  "deadline": null
+}
