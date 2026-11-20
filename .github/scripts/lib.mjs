@@ -134,16 +134,6 @@ export function parseBojTitle(html = '', number) {
 }
 
 /**
- * 정올 문제 페이지의 <title>은 로그인 없이 "{번호}번: {제목} - 정올 JUNGOL" 형태로 내려온다.
- * 없는/비공개 문제면 "문제 - JUNGOL"로 떨어지므로 null.
- */
-export function parseJungolTitle(html = '', number) {
-  const m = html.match(/<title>\s*(\d+)번:\s*([\s\S]+?)\s*-\s*정올 JUNGOL\s*<\/title>/);
-  if (!m || (number && m[1] !== String(number))) return null;
-  return decodeEntities(m[2]).trim() || null;
-}
-
-/**
  * "문제 목록" 필드의 한 줄을 해석한다.
  * 형식: `링크 | 제목 | 번호(선택) | 난이도(선택) | 마감일(선택)`
  */

@@ -349,30 +349,36 @@ test('백준 번호에 숫자가 아닌 값을 적으면 거부한다', async ()
   assert.match(core._outputs.__failed, /백준 문제 번호는 숫자여야 합니다/);
 });
 
-test('정올 링크(?cursor 포함)만 적으면 번호·제목을 자동으로 채운다', async () => {
+test('정올은 번호를 링크(?cursor 포함)에서 뽑고 정식 주소로 저장하며, 제목은 직접 적은 값을 쓴다 (네트워크 안 탐)', async () => {
   const { data: parent } = await github.rest.issues.create({ title: '[문제]' });
-  const b = body(14, 'https://jungol.co.kr/problem/1101?cursor=OCwzLDE=');
-  const fetchCalls = [];
-  const fetchImpl = async (url) => {
-    fetchCalls.push(url);
-    return { ok: true, text: async () => '<title>1101번: 신기한 수열 - 정올 JUNGOL</title>' };
+  const b = body(14, 'https://jungol.co.kr/problem/1101?cursor=OCwzLDE= | 신기한 수열');
+  let fetchCalled = false;
+  const fetchImpl = async () => {
+    fetchCalled = true;
+    return { ok: true, text: async () => '' };
   };
   const core = makeCore();
   await registerRun({ github, context: issueContext(OWNER, REPO, parent.number, b), core, fetchImpl });
 
   assert.equal(core._outputs.__failed, undefined);
-  assert.deepEqual(fetchCalls, ['https://jungol.co.kr/problem/1101']);
+  assert.equal(fetchCalled, false);
   const meta = readMeta('solutions/week-14/jungol-1101');
   assert.equal(meta.platformLabel, '정올');
+  assert.equal(meta.number, '1101');
   assert.equal(meta.title, '신기한 수열');
   assert.equal(meta.url, 'https://jungol.co.kr/problem/1101');
 });
 
-test('정올 페이지가 봇 차단(403)되면 직접 입력하라는 에러로 떨어진다', async () => {
+test('정올 제목을 비우면 자동 추출을 시도하지 않고 "제목을 입력해 주세요"로 실패한다', async () => {
   const { data: parent } = await github.rest.issues.create({ title: '[문제]' });
   const b = body(14, 'https://jungol.co.kr/problem/1101');
-  const fetchImpl = async () => ({ ok: false, status: 403 });
+  let fetchCalled = false;
+  const fetchImpl = async () => {
+    fetchCalled = true;
+    return { ok: true, text: async () => '<title>1101번: 신기한 수열 - 정올 JUNGOL</title>' };
+  };
   const core = makeCore();
   await registerRun({ github, context: issueContext(OWNER, REPO, parent.number, b), core, fetchImpl });
-  assert.match(core._outputs.__failed, /제목을 자동으로 가져오지 못했습니다/);
+  assert.equal(fetchCalled, false);
+  assert.match(core._outputs.__failed, /제목을 입력해 주세요/);
 });

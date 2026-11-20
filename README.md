@@ -34,8 +34,8 @@
 
 > 플랫폼은 링크 도메인(swexpertacademy.com · programmers.co.kr · codetree.ai · acmicpc.net · jungol.co.kr)으로 자동 판별합니다.
 > SWEA는 링크에 문제 번호가 없어서 `번호`를 직접 입력해야 합니다. 프로그래머스·백준·정올은 비워 두면 링크에서 자동으로 추출하고, 코드트리는 링크에서 문제 슬러그를 자동으로 추출합니다.
-> **제목도 프로그래머스·백준·정올은 비워 두면 문제 페이지에서 자동으로 가져옵니다** — 이 세 곳은 링크 한 줄이면 충분합니다.
-> SWEA·코드트리는 로그인이 필요한 페이지라 제목을 직접 입력해야 합니다.
+> **제목도 프로그래머스·백준은 비워 두면 문제 페이지에서 자동으로 가져옵니다** — 이 두 곳은 링크 한 줄이면 충분합니다.
+> SWEA·코드트리는 로그인이 필요한 페이지라, 정올은 GitHub Actions에서 페이지 접근이 막혀서 제목을 직접 입력해야 합니다. 예) `https://jungol.co.kr/problem/1101 | 신기한 수열`
 
 이 이슈가 **주차 이슈(부모)**가 되고, 문제마다 **하위 이슈(자식)**가 하나씩 만들어져
 [Sub-issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/adding-sub-issues)로 연결됩니다.

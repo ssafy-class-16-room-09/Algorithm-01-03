@@ -9,7 +9,6 @@ import {
   findProblemDirsByParentIssue,
   parseBojTitle,
   parseIssueForm,
-  parseJungolTitle,
   parseProblemLine,
   parseProgrammersTitle,
   parseSolutionPath,
@@ -209,14 +208,4 @@ test('parseBojTitle: "{번호}번: {제목}" 에서 제목만, 없는 문제면 
   assert.equal(parseBojTitle('<title>Baekjoon Online Judge</title>', '1'), null);
   assert.equal(parseBojTitle('<title>1001번: A-B</title>', '1000'), null, '다른 번호 페이지면 null');
   assert.equal(parseBojTitle(''), null);
-});
-
-test('parseJungolTitle: "{번호}번: {제목} - 정올 JUNGOL" 에서 제목만, 없는 문제면 null', () => {
-  assert.equal(
-    parseJungolTitle('<title>1000번: 두 정수 더하기 (A+B) - 정올 JUNGOL</title>', '1000'),
-    '두 정수 더하기 (A+B)',
-  );
-  assert.equal(parseJungolTitle('<title>1101번: 신기한 수열 - 정올 JUNGOL</title>', '1101'), '신기한 수열');
-  assert.equal(parseJungolTitle('<title>문제 - JUNGOL</title>', '9999'), null);
-  assert.equal(parseJungolTitle(''), null);
 });

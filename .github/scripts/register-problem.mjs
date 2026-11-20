@@ -9,7 +9,6 @@ import {
   getMembers,
   parseBojTitle,
   parseIssueForm,
-  parseJungolTitle,
   parseProblemLine,
   parseProgrammersTitle,
   platformLabel,
@@ -29,7 +28,8 @@ import {
 const TITLE_PARSERS = {
   pgs: (html) => parseProgrammersTitle(html),
   boj: (html, number) => parseBojTitle(html, number),
-  jungol: (html, number) => parseJungolTitle(html, number),
+  // 정올은 여기 넣지 않는다. 로컬에선 <title>이 보이지만 jungol.co.kr 이 Cloudflare 뒤에 있어
+  // GitHub Actions 러너에서는 제목을 못 가져온다 (2026-11-20 실제 등록 테스트로 확인). 제목은 직접 입력.
 };
 
 /**
