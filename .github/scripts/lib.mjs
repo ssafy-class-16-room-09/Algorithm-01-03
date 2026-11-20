@@ -26,8 +26,21 @@ export function parseIssueForm(body = '') {
   return fields;
 }
 
+const PLATFORM_LABELS = {
+  swea: 'SWEA',
+  pgs: '프로그래머스',
+  ct: '코드트리',
+  boj: '백준',
+  jungol: '정올',
+};
+
 export function platformLabel(key) {
-  return key === 'swea' ? 'SWEA' : key === 'pgs' ? '프로그래머스' : key === 'ct' ? '코드트리' : key;
+  return PLATFORM_LABELS[key] ?? key;
+}
+
+/** 링크의 호스트가 domain 자신이거나 그 하위 도메인인지. */
+function hostIs(host, domain) {
+  return host === domain || host.endsWith(`.${domain}`);
 }
 
 /** 문제 링크 도메인으로부터 플랫폼을 추정한다. 알 수 없는 도메인이면 null. */
@@ -36,7 +49,30 @@ export function urlPlatformKey(url = '') {
   if (v.includes('swexpertacademy.com')) return 'swea';
   if (v.includes('programmers.co.kr')) return 'pgs';
   if (v.includes('codetree.ai')) return 'ct';
+  // 백준/정올은 includes 대신 호스트를 정확히 본다. (예: "notacmicpc.net" 같은 오판 방지)
+  let host = '';
+  try {
+    host = new URL(url).hostname.toLowerCase();
+  } catch {
+    return null;
+  }
+  // 백준: 2026-11-20 재오픈 후 정식 주소가 acmicpc.net 으로 바뀌었다 (www.acmicpc.net → 301).
+  //       단축 주소 boj.kr/{번호} 도 그대로 받는다.
+  if (hostIs(host, 'acmicpc.net') || host === 'boj.kr') return 'boj';
+  if (hostIs(host, 'jungol.co.kr')) return 'jungol';
   return null;
+}
+
+/**
+ * 백준·정올 링크를 정식 주소로 바꾼다. 정올 목록에서 들어오면 붙는 `?cursor=...`,
+ * 백준의 www/단축 주소(boj.kr)를 걷어내서 README·현황판 링크가 항상 같은 모양이 되게 한다.
+ * 번호를 못 뽑으면 원래 링크를 그대로 돌려준다. 다른 플랫폼은 건드리지 않는다.
+ */
+export function canonicalProblemUrl(pKey, url, number) {
+  if (!/^\d+$/.test(number || '')) return url;
+  if (pKey === 'boj') return `https://acmicpc.net/problem/${number}`;
+  if (pKey === 'jungol') return `https://jungol.co.kr/problem/${number}`;
+  return url;
 }
 
 /**
@@ -45,9 +81,17 @@ export function urlPlatformKey(url = '') {
  *  - 코드트리: 경로에 들어 있는 문제 슬러그 (하이픈 포함)
  *      .../frequent-problems/artistry/description                     → artistry
  *      .../training-field/frequent-problems/problems/codetree-omakase → codetree-omakase
+ *  - 백준: `acmicpc.net/problem/{번호}` 또는 단축 주소 `boj.kr/{번호}`
+ *      대회 전용 링크(`/contest/problem/{대회}/{순번}`)는 전체 문제 번호가 아니라서 null (번호 직접 입력)
+ *  - 정올: `jungol.co.kr/problem/{번호}` (뒤에 ?cursor=... 가 붙어도 됨)
  *  - SWEA: 링크가 해시라 불가능 → null (번호 직접 입력)
  */
 export function problemNumberFromUrl(url = '') {
+  const boj = url.match(/^https?:\/\/(?:[\w-]+\.)*acmicpc\.net\/problem\/(\d+)(?:[/?#]|$)/i)
+    || url.match(/^https?:\/\/boj\.kr\/(\d+)(?:[/?#]|$)/i);
+  if (boj) return boj[1];
+  const jungol = url.match(/^https?:\/\/(?:[\w-]+\.)*jungol\.co\.kr\/problem\/(\d+)(?:[/?#]|$)/i);
+  if (jungol) return jungol[1];
   const pgs = url.match(/lessons\/(\d+)/);
   if (pgs) return pgs[1];
   const ct = url.match(/codetree\.ai\/(?:[\w-]+\/)*(?:frequent-problems|problems)\/([a-z0-9][a-z0-9-]*)/i);
@@ -63,6 +107,40 @@ export function problemNumberFromUrl(url = '') {
 export function parseProgrammersTitle(html = '') {
   const m = html.match(/<title>\s*코딩테스트 연습 - (.+?)\s*\|\s*프로그래머스 스쿨\s*<\/title>/);
   return m ? m[1].trim() : null;
+}
+
+/** <title> 안의 흔한 HTML 엔티티만 풀어 준다. (문제 제목에 &, <, " 등이 들어가는 경우) */
+function decodeEntities(s) {
+  return s
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&');
+}
+
+/**
+ * 백준 문제 페이지의 <title>은 로그인 없이 "{번호}번: {제목}" 형태로 내려온다.
+ * 없는 문제면 "Baekjoon Online Judge"로 떨어지므로 null.
+ * number를 주면 그 번호의 페이지인지까지 확인한다.
+ */
+export function parseBojTitle(html = '', number) {
+  const m = html.match(/<title>\s*(\d+)번:\s*([\s\S]+?)\s*<\/title>/);
+  if (!m || (number && m[1] !== String(number))) return null;
+  return decodeEntities(m[2]).trim() || null;
+}
+
+/**
+ * 정올 문제 페이지의 <title>은 로그인 없이 "{번호}번: {제목} - 정올 JUNGOL" 형태로 내려온다.
+ * 없는/비공개 문제면 "문제 - JUNGOL"로 떨어지므로 null.
+ */
+export function parseJungolTitle(html = '', number) {
+  const m = html.match(/<title>\s*(\d+)번:\s*([\s\S]+?)\s*-\s*정올 JUNGOL\s*<\/title>/);
+  if (!m || (number && m[1] !== String(number))) return null;
+  return decodeEntities(m[2]).trim() || null;
 }
 
 /**

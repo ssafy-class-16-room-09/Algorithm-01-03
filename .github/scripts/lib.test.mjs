@@ -4,9 +4,12 @@ import os from 'node:os';
 import path from 'node:path';
 import { test } from 'node:test';
 import {
+  canonicalProblemUrl,
   checklistMarker,
   findProblemDirsByParentIssue,
+  parseBojTitle,
   parseIssueForm,
+  parseJungolTitle,
   parseProblemLine,
   parseProgrammersTitle,
   parseSolutionPath,
@@ -158,4 +161,62 @@ test('findProblemDirsByParentIssue: .problem.json의 parentIssue로 폴더를 �
   } finally {
     fs.rmSync(workspace, { recursive: true, force: true });
   }
+});
+
+test('urlPlatformKey: 백준(acmicpc.net · www · boj.kr)과 정올을 판별한다', () => {
+  assert.equal(urlPlatformKey('https://acmicpc.net/problem/1000'), 'boj');
+  assert.equal(urlPlatformKey('https://www.acmicpc.net/problem/1000'), 'boj');
+  assert.equal(urlPlatformKey('https://boj.kr/1000'), 'boj');
+  assert.equal(urlPlatformKey('https://jungol.co.kr/problem/1000'), 'jungol');
+  assert.equal(urlPlatformKey('https://www.jungol.co.kr/problem/1000?cursor=abc'), 'jungol');
+  assert.equal(urlPlatformKey('https://notacmicpc.net/problem/1000'), null);
+  assert.equal(urlPlatformKey('https://evil.com/?r=acmicpc.net'), null);
+});
+
+test('platformLabel: 백준 / 정올', () => {
+  assert.equal(platformLabel('boj'), '백준');
+  assert.equal(platformLabel('jungol'), '정올');
+});
+
+test('problemNumberFromUrl: 백준·정올 번호를 뽑는다', () => {
+  assert.equal(problemNumberFromUrl('https://acmicpc.net/problem/16236'), '16236');
+  assert.equal(problemNumberFromUrl('https://www.acmicpc.net/problem/1000'), '1000');
+  assert.equal(problemNumberFromUrl('https://boj.kr/1000'), '1000');
+  assert.equal(problemNumberFromUrl('https://acmicpc.net/problem/1000?foo=1'), '1000');
+  // 채점 현황 / 대회 전용 링크는 전체 문제 번호가 아니다
+  assert.equal(problemNumberFromUrl('https://acmicpc.net/problem/status/1000'), null);
+  assert.equal(problemNumberFromUrl('https://acmicpc.net/contest/problem/1234/1'), null);
+  assert.equal(problemNumberFromUrl('https://jungol.co.kr/problem/1101?cursor=OCwzLDE='), '1101');
+  assert.equal(problemNumberFromUrl('https://jungol.co.kr/problem/1101/'), '1101');
+});
+
+test('canonicalProblemUrl: 백준·정올 링크를 정식 주소로 바꾸고 다른 플랫폼은 그대로 둔다', () => {
+  assert.equal(canonicalProblemUrl('boj', 'https://www.acmicpc.net/problem/1000', '1000'), 'https://acmicpc.net/problem/1000');
+  assert.equal(canonicalProblemUrl('boj', 'https://boj.kr/1000', '1000'), 'https://acmicpc.net/problem/1000');
+  assert.equal(
+    canonicalProblemUrl('jungol', 'https://jungol.co.kr/problem/1101?cursor=abc', '1101'),
+    'https://jungol.co.kr/problem/1101',
+  );
+  const pgs = 'https://school.programmers.co.kr/learn/courses/30/lessons/1';
+  assert.equal(canonicalProblemUrl('pgs', pgs, '1'), pgs);
+  assert.equal(canonicalProblemUrl('boj', 'https://acmicpc.net/x', ''), 'https://acmicpc.net/x');
+});
+
+test('parseBojTitle: "{번호}번: {제목}" 에서 제목만, 없는 문제면 null', () => {
+  assert.equal(parseBojTitle('<title>1000번: A+B</title>', '1000'), 'A+B');
+  assert.equal(parseBojTitle('<title>2447번: 별 찍기 - 10</title>', '2447'), '별 찍기 - 10');
+  assert.equal(parseBojTitle('<title>1번: Tom &amp; Jerry &lt;3&gt;</title>'), 'Tom & Jerry <3>');
+  assert.equal(parseBojTitle('<title>Baekjoon Online Judge</title>', '1'), null);
+  assert.equal(parseBojTitle('<title>1001번: A-B</title>', '1000'), null, '다른 번호 페이지면 null');
+  assert.equal(parseBojTitle(''), null);
+});
+
+test('parseJungolTitle: "{번호}번: {제목} - 정올 JUNGOL" 에서 제목만, 없는 문제면 null', () => {
+  assert.equal(
+    parseJungolTitle('<title>1000번: 두 정수 더하기 (A+B) - 정올 JUNGOL</title>', '1000'),
+    '두 정수 더하기 (A+B)',
+  );
+  assert.equal(parseJungolTitle('<title>1101번: 신기한 수열 - 정올 JUNGOL</title>', '1101'), '신기한 수열');
+  assert.equal(parseJungolTitle('<title>문제 - JUNGOL</title>', '9999'), null);
+  assert.equal(parseJungolTitle(''), null);
 });
