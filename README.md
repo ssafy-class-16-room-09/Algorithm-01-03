@@ -95,20 +95,33 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-11-20 · 등록된 문제 71개
+> 마지막 갱신: 2026-11-20 · 등록된 문제 76개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 64 / 71 | 90% |
-| 🥈 | [@babirakkk](https://github.com/babirakkk) | 63 / 71 | 89% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 63 / 71 | 89% |
-| 4 | [@alswlfl29](https://github.com/alswlfl29) | 62 / 71 | 87% |
+| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 64 / 76 | 84% |
+| 🥈 | [@babirakkk](https://github.com/babirakkk) | 63 / 76 | 83% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 63 / 76 | 83% |
+| 4 | [@alswlfl29](https://github.com/alswlfl29) | 62 / 76 | 82% |
 
 ### 📚 주차별 문제
 
 <details open>
+<summary><b>week-16</b> (5문제)</summary>
+
+| 문제 | 이슈 | 제출 | 제출자 |
+| --- | --- | --- | --- |
+| [백준 10986 · 나머지 합](https://acmicpc.net/problem/10986) | [#387](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/387) | 0 | - |
+| [백준 11062 · 카드 게임](https://acmicpc.net/problem/11062) | [#386](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/386) | 0 | - |
+| [백준 2696 · 중앙값 구하기](https://acmicpc.net/problem/2696) | [#385](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/385) | 0 | - |
+| [백준 3474 · 교수가 된 현우](https://acmicpc.net/problem/3474) | [#389](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/389) | 0 | - |
+| [백준 7432 · 디스크 트리](https://acmicpc.net/problem/7432) | [#388](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/388) | 0 | - |
+
+</details>
+
+<details>
 <summary><b>week-15</b> (5문제)</summary>
 
 | 문제 | 이슈 | 제출 | 제출자 |

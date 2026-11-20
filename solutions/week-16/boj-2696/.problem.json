@@ -1,0 +1,12 @@
+{
+  "issue": 385,
+  "parentIssue": 384,
+  "week": 16,
+  "platform": "boj",
+  "platformLabel": "백준",
+  "number": "2696",
+  "title": "중앙값 구하기",
+  "url": "https://acmicpc.net/problem/2696",
+  "difficulty": null,
+  "deadline": null
+}
