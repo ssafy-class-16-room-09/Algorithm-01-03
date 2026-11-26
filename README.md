@@ -95,20 +95,33 @@ solutions/
 
 <!-- algo-study:board:start -->
 
-> 마지막 갱신: 2026-11-25 · 등록된 문제 76개
+> 마지막 갱신: 2026-11-26 · 등록된 문제 81개
 
 ### 🏆 제출 순위
 
 | 순위 | 스터디원 | 푼 문제 | 진행률 |
 | --- | --- | --- | --- |
-| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 64 / 76 | 84% |
-| 🥈 | [@babirakkk](https://github.com/babirakkk) | 63 / 76 | 83% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 63 / 76 | 83% |
-| 4 | [@alswlfl29](https://github.com/alswlfl29) | 62 / 76 | 82% |
+| 🥇 | [@Sionparadox](https://github.com/Sionparadox) | 64 / 81 | 79% |
+| 🥈 | [@babirakkk](https://github.com/babirakkk) | 63 / 81 | 78% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 63 / 81 | 78% |
+| 4 | [@alswlfl29](https://github.com/alswlfl29) | 62 / 81 | 77% |
 
 ### 📚 주차별 문제
 
 <details open>
+<summary><b>week-17</b> (5문제)</summary>
+
+| 문제 | 이슈 | 제출 | 제출자 |
+| --- | --- | --- | --- |
+| [백준 18809 · Gaaaaaaaaaarden](https://acmicpc.net/problem/18809) | [#431](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/431) | 0 | - |
+| [백준 20208 · 진우의 민트초코우유](https://acmicpc.net/problem/20208) | [#432](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/432) | 0 | - |
+| [백준 2811 · 상범이의 우울](https://acmicpc.net/problem/2811) | [#430](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/430) | 0 | - |
+| [백준 3967 · 매직 스타](https://acmicpc.net/problem/3967) | [#428](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/428) | 0 | - |
+| [백준 6987 · 월드컵](https://acmicpc.net/problem/6987) | [#429](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/429) | 0 | - |
+
+</details>
+
+<details>
 <summary><b>week-16</b> (5문제)</summary>
 
 | 문제 | 이슈 | 제출 | 제출자 |
