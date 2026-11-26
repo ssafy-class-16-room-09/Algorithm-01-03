@@ -103,7 +103,7 @@ solutions/
 | --- | --- | --- | --- |
 | 🥇 | [@alswlfl29](https://github.com/alswlfl29) | 67 / 81 | 83% |
 | 🥈 | [@babirakkk](https://github.com/babirakkk) | 67 / 81 | 83% |
-| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 66 / 81 | 81% |
+| 🥉 | [@JooeonLee](https://github.com/JooeonLee) | 67 / 81 | 83% |
 | 4 | [@Sionparadox](https://github.com/Sionparadox) | 64 / 81 | 79% |
 
 ### 📚 주차별 문제
@@ -139,7 +139,7 @@ solutions/
 
 | 문제 | 이슈 | 제출 | 제출자 |
 | --- | --- | --- | --- |
-| [코드트리 261112123 · 이진 트리 최대 경로 합](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-binary-tree-maximum-path-sum/description) | [#372](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/372) | 2 | [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
+| [코드트리 261112123 · 이진 트리 최대 경로 합](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-binary-tree-maximum-path-sum/description) | [#372](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/372) | 3 | [@JooeonLee](https://github.com/JooeonLee), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [코드트리 261112456 · 로봇의 이동](https://www.codetree.ai/ko/frequent-problems/acpc/problems/1-1783051346/description) | [#373](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/373) | 3 | [@JooeonLee](https://github.com/JooeonLee), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
 | [코드트리 261112789 · 인접하지 않게 색칠하기](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-coloring-not-adjacently/description) | [#375](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/375) | 1 | [@alswlfl29](https://github.com/alswlfl29) |
 | [프로그래머스 136797 · 숫자 타자 대회](https://school.programmers.co.kr/learn/courses/30/lessons/136797) | [#374](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/374) | 3 | [@JooeonLee](https://github.com/JooeonLee), [@alswlfl29](https://github.com/alswlfl29), [@babirakkk](https://github.com/babirakkk) |
