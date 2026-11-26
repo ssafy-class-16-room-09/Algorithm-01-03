@@ -103,8 +103,8 @@ solutions/
 | --- | --- | --- | --- |
 | 🥇 | [@JooeonLee](https://github.com/JooeonLee) | 64 / 81 | 79% |
 | 🥈 | [@Sionparadox](https://github.com/Sionparadox) | 64 / 81 | 79% |
-| 🥉 | [@babirakkk](https://github.com/babirakkk) | 63 / 81 | 78% |
-| 4 | [@alswlfl29](https://github.com/alswlfl29) | 62 / 81 | 77% |
+| 🥉 | [@alswlfl29](https://github.com/alswlfl29) | 63 / 81 | 78% |
+| 4 | [@babirakkk](https://github.com/babirakkk) | 63 / 81 | 78% |
 
 ### 📚 주차별 문제
 
@@ -143,7 +143,7 @@ solutions/
 | [코드트리 261112456 · 로봇의 이동](https://www.codetree.ai/ko/frequent-problems/acpc/problems/1-1783051346/description) | [#373](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/373) | 1 | [@JooeonLee](https://github.com/JooeonLee) |
 | [코드트리 261112789 · 인접하지 않게 색칠하기](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-coloring-not-adjacently/description) | [#375](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/375) | 0 | - |
 | [프로그래머스 136797 · 숫자 타자 대회](https://school.programmers.co.kr/learn/courses/30/lessons/136797) | [#374](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/374) | 0 | - |
-| [프로그래머스 389480 · 완전 범죄](https://school.programmers.co.kr/learn/courses/30/lessons/389480) | [#371](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/371) | 0 | - |
+| [프로그래머스 389480 · 완전 범죄](https://school.programmers.co.kr/learn/courses/30/lessons/389480) | [#371](https://github.com/ssafy-class-16-room-09/Algorithm-01-03/issues/371) | 1 | [@alswlfl29](https://github.com/alswlfl29) |
 
 </details>
 
